@@ -1,5 +1,5 @@
 # MVS
-> 3D Reconstruction from Multi-View Stereo Imagery
+> Reconstructing a 3D World from 2D Images
 
 ## :robot:	 Learning-based MVS methods
 :books:  [Preliminaries of MVS](Preliminaries/)    
