@@ -1,5 +1,5 @@
 # MVS
-> Multi-View Stereo Network based on deep learning  
+> 3D reconstruction from multi-view stereo imagery
 
 ## :robot:	 Learning-based MVS methods
 :books:  Preliminaries of MVS  
