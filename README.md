@@ -2,7 +2,7 @@
 > 3D Reconstruction from Multi-View Stereo Imagery
 
 ## :robot:	 Learning-based MVS methods
-:books:  Preliminaries of MVS  
+:books:  [Preliminaries of MVS](Preliminaries/*)    
 :star:  Datasets: *DTU, BlendedMVS, Tanks and Temples, ETH3D*  
 |  | Abbreviation & Notes | Title | Years | Paper & Code | Rating |
 | :-------: | :-------: | :-------: | :---------: | :-------: | :-------: |
