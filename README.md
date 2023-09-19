@@ -17,10 +17,10 @@ Milestones in Learning MVS
 [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Cheng_Deep_Stereo_Using_Adaptive_Thin_Volume_Representation_With_Uncertainty_Awareness_CVPR_2020_paper.pdf)  
 [supp.](https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Cheng_Deep_Stereo_Using_CVPR_2020_supplemental.pdf)
 [code](https://github.com/touristCheng/UCSNet)| 
-| 4 | CasMVSNet[^*] | Cascade Cost Volume for High-Resolution Multi-View Stereo and Stereo Matching | CVPR 2020 | 
+| 4 | CasMVSNet | Cascade Cost Volume for High-Resolution Multi-View Stereo and Stereo Matching | CVPR 2020 | 
 [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Gu_Cascade_Cost_Volume_for_High-Resolution_Multi-View_Stereo_and_Stereo_Matching_CVPR_2020_paper.pdf)
 [code](https://github.com/alibaba/cascade-stereo/tree/master/CasMVSNet)|  
-| 5 | AA-RMVSNet[^*] | AA-RMVSNet: Adaptive Aggregation Recurrent Multi-view Stereo Network | ICCV 2021 | 
+| 5 | AA-RMVSNet | AA-RMVSNet: Adaptive Aggregation Recurrent Multi-view Stereo Network | ICCV 2021 | 
 [paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Wei_AA-RMVSNet_Adaptive_Aggregation_Recurrent_Multi-View_Stereo_Network_ICCV_2021_paper.pdf)  
 [supp.](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Wei_AA-RMVSNet_Adaptive_Aggregation_ICCV_2021_supplemental.pdf)
 [code](https://github.com/QT-Zhu/AA-RMVSNet)|  
@@ -36,11 +36,11 @@ Milestones in Learning MVS
 [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Ding_TransMVSNet_Global_Context-Aware_Multi-View_Stereo_Network_With_Transformers_CVPR_2022_paper.pdf)
 [supp.](https://openaccess.thecvf.com/content/CVPR2022/supplemental/Ding_TransMVSNet_Global_Context-Aware_CVPR_2022_supplemental.pdf)
 [code](https://github.com/megvii-research/TransMVSNet)|  
-| 9 | UniMVSNet[^*] | Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation and Focal Loss | CVPR 2022 | 
+| 9 | UniMVSNet | Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation and Focal Loss | CVPR 2022 | 
 [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Peng_Rethinking_Depth_Estimation_for_Multi-View_Stereo_A_Unified_Representation_CVPR_2022_paper.pdf)
 [supp.](https://openaccess.thecvf.com/content/CVPR2022/supplemental/Peng_Rethinking_Depth_Estimation_CVPR_2022_supplemental.pdf)
 [code](https://github.com/prstrive/UniMVSNet)|  
-| 10 | GBiNet[^*] | Generalized Binary Search Network for Highly-Efficient Multi-View Stereo | CVPR 2022 | 
+| 10 | GBiNet | Generalized Binary Search Network for Highly-Efficient Multi-View Stereo | CVPR 2022 | 
 [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Mi_Generalized_Binary_Search_Network_for_Highly-Efficient_Multi-View_Stereo_CVPR_2022_paper.pdf)
 [supp.](https://openaccess.thecvf.com/content/CVPR2022/supplemental/Mi_Generalized_Binary_Search_CVPR_2022_supplemental.pdf)
 [code](https://github.com/MiZhenxing/GBi-Net)|  
