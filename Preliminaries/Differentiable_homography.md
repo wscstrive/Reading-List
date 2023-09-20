@@ -1,4 +1,11 @@
-## Introduction to coordinate systems
+# Rigid body transformation
+## Translation
 
-[![2-D-rotate.jpg](https://i.postimg.cc/6pvDHT9K/2-D-rotate.jpg)](https://postimg.cc/RWvshS6p)
-[![2-D-rotate.jpg](https://i.postimg.cc/26rt0w6R/2-D-rotate.jpg)](https://postimg.cc/qtDQR2yj)
+## Rotation
+
+# Coordinate systems
+> *world coordinate system*, *camera coordinate system*, and *pixel coordinate system*.
+## World coordinate system -> Camera coordinate system
+## Camera coordinate system -> Pixel coordinate system
+
+# Homography_warp
