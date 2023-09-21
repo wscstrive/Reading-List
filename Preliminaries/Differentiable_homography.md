@@ -79,6 +79,8 @@ $$
 
 ## Camera coordinate system -> Image coordinate system
 ![camera- image](https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888)
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
+
 
 ## Image coordinate system -> Pixel coordinate system
 
