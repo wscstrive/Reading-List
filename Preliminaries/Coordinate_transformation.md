@@ -94,7 +94,7 @@ $$
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/7c5817db-7ce3-46c9-a776-f03773c7fef9" alt="image- pixel" width="300px">  
 
 
-&amp; These two coordinate systems are easily confused  
+:amp These two coordinate systems are easily confused  
 The unit of the Image coordinate system is mm, which is a physical unit, while the unit of the Pixel coordinate system is pixel. We usually describe a pixel in terms of rows and columns. So the conversion between the two is as follows: where dx and dy represent how many mm each column and each row represent, that is, 1 (pixel) = dx (mm).  
 
 $$
