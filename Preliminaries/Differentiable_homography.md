@@ -45,3 +45,6 @@ Translation matrix: _3*1_? coordinates are independent of each other
 ## Camera coordinate system -> Pixel coordinate system
 
 # Homography_warp
+
+# Reference
+!(深入理解旋转矩阵和平移向量的本质)[https://zhuanlan.zhihu.com/p/141597984]
