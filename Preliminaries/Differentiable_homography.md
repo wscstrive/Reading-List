@@ -45,7 +45,7 @@ Translation matrix: _3*1_? coordinates are independent of each other
 ![rotation](https://github.com/elleryw0518/MVS/assets/101634608/d885560e-3a30-43e9-8379-11204747e3cf)  
 
 # Coordinate systems
-> World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
+- World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae" alt="world- camera" width="300px">  
