@@ -86,9 +86,40 @@ $$
 ## Camera coordinate system -> Image coordinate system
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
 
+![camera-image](https://github.com/elleryw0518/MVS/assets/101634608/db76c20c-5947-46f0-850e-9ec83c9e0592)
 
 ## Image coordinate system -> Pixel coordinate system
 
+![image- pixel](https://github.com/elleryw0518/MVS/assets/101634608/7c5817db-7ce3-46c9-a776-f03773c7fef9)
+
+&amp; These two coordinate systems are easily confused
+The unit of the Image coordinate system is mm, which is a physical unit, while the unit of the Pixel coordinate system is pixel. We usually describe a pixel in terms of rows and columns. So the conversion between the two is as follows: where dx and dy represent how many mm each column and each row represent, that is, 1 (pixel) = dx (mm).  
+
+$$
+\left\{\begin{matrix}
+u = \frac{x}{dx} + u_0 
+\\
+v = \frac{y}{d_y} + v_0
+\end{matrix}\right.
+$$
+
+$$
+\begin{bmatrix}
+u \\
+v \\
+1
+\end{bmatrix} = 
+\begin{bmatrix}
+\frac{1}{dx}&0&u_0 \\
+0&\frac{1}{dy}&v_0 \\
+0&0&1
+\end{bmatrix} 
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+$$
 
 # Homography_warp
 
