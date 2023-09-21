@@ -1,12 +1,11 @@
 # Rigid body transformation
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/6acf03ea-423c-4f51-acd6-a9601b1736a3" alt="rigib_body" width="400px">  
 
-Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are P1 and P2 respectively:
+- Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are P1 and P2 respectively:
   
 $$
 p_2 = R p_1 + t,\ p_1=(x, y, z),\ p_2=(x', y', z') 
-$$
-  
+$$  
 where R is rotation matrix, t is translation matrix.
 i.e.,:  
 
