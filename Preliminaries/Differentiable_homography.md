@@ -33,7 +33,7 @@ t_3
 $$  
 
 ## Translation
-
+[![translation.png](https://i.postimg.cc/fL6NKRdy/translation.png)](https://postimg.cc/ygXt6BvC)
 ## Rotation
 [![rotation.png](https://i.postimg.cc/xCDFCNV0/rotation.png)](https://postimg.cc/94bBgMfS)  
 # Coordinate systems
