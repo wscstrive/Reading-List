@@ -44,7 +44,36 @@ Translation matrix: _3*1_? coordinates are independent of each other
 > World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
 ![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae)
-
+$$
+\begin{bmatrix}
+X_c \\
+Y_c \\
+Z_c
+\end{bmatrix}=
+R
+\begin{bmatrix}
+X_w \\
+Y_w \\
+Z_w
+\end{bmatrix}+
+T \Longrightarrow 
+\begin{bmatrix}
+X_c \\
+Y_c \\
+Z_c \\
+1
+\end{bmatrix}=
+\begin{bmatrix}
+R & T \\
+0^T & 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+X_w \\
+Y_w \\
+Z_w \\
+1
+\end{bmatrix}
+$$
 > The transformation from the world coordinate system to the camera coordinate system is a rigid body transformation and does not cause deformation.
 
 ## Camera coordinate system -> Pixel coordinate system
