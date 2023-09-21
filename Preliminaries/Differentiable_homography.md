@@ -44,7 +44,7 @@ Translation matrix: _3*1_? coordinates are independent of each other
 > World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
 ![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae)  
-
+- The world coordinate system is a special coordinate system that was introduced because of the camera to determine the position of each thing. In this transformation, we only need to align the camera coordinate system with the world coordinate system, it is a rigid body transformation and does not cause deformation.  
 $$
 \begin{bmatrix}
 X_c \\
@@ -75,7 +75,6 @@ Z_w \\
 1
 \end{bmatrix}
 $$
-> The transformation from the world coordinate system to the camera coordinate system is a rigid body transformation and does not cause deformation.
 
 ## Camera coordinate system -> Pixel coordinate system
 
