@@ -4,7 +4,7 @@
 ## Rotation
 
 # Coordinate systems
-> world coordinate system, camera coordinate system, and pixel coordinate system.
+> World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
 ## Camera coordinate system -> Pixel coordinate system
 
