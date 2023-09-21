@@ -34,7 +34,7 @@ $$
 > The position and orientation of rigid objects can be transformed while their shape and size remain unchanged.  
 Degrees of freedom: 6 (3 rotations and 3 translations)  
 Rotation matrix: _3*3_? Rotation around an axis affects other axes, and the coordinates are related to each other  
-Translation matrix: _1*1_? coordinates are independent of each other  
+Translation matrix: _3*1_? coordinates are independent of each other  
 ## Translation
 [![translation.png](https://i.postimg.cc/fL6NKRdy/translation.png)](https://postimg.cc/ygXt6BvC)
 ## Rotation
