@@ -43,7 +43,8 @@ Translation matrix: _3*1_? coordinates are independent of each other
 # Coordinate systems
 > World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
-![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae)
+![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae)  
+
 $$
 \begin{bmatrix}
 X_c \\
