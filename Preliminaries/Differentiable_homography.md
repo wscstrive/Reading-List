@@ -1,5 +1,7 @@
 # Rigid body transformation
-[![rigib-body.png](https://i.postimg.cc/pV3RBpZH/rigib-body.png)](https://postimg.cc/YjN5r2Zn)
+<div style="text-align:center;">
+  [![rigib-body.png](https://i.postimg.cc/pV3RBpZH/rigib-body.png)](https://postimg.cc/YjN5r2Zn)
+</div>
 Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are respectively
 ## Translation
 
