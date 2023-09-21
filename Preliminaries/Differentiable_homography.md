@@ -84,9 +84,9 @@ Z_w \\
 $$  
 
 ## Camera coordinate system -> Image coordinate system
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="500px">
   
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/db76c20c-5947-46f0-850e-9ec83c9e0592" alt="camera-image" width="300px">  
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/db76c20c-5947-46f0-850e-9ec83c9e0592" alt="camera-image" width="150px">  
 
 
 ## Image coordinate system -> Pixel coordinate system
