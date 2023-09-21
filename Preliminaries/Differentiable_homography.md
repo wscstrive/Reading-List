@@ -8,7 +8,7 @@ $$
   
 where R is rotation matrix, t is translation matrix.
 i.e.,:  
-$$
+
 $$
 \begin{matrix}
 x' \\
@@ -30,9 +30,8 @@ t_1 \\
 t_2 \\
 t_3
 \end{matrix}
-$$
-
 $$  
+
 ## Translation
 
 ## Rotation
