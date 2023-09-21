@@ -3,7 +3,7 @@
 Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are P1 and P2 respectively:
   
 $$
-p_2 = R p_1 + t,/;p_1=(x,y,z),/;p_2=(x',y',z') 
+p_2 = R p_1 + t, p_1=(x, y, z), p_2=(x', y', z') 
 $$
   
 where R is rotation matrix, t is translation matrix.
