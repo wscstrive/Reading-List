@@ -35,7 +35,7 @@ $$
 ## Translation
 
 ## Rotation
-[![rotation-jpg.jpg](https://i.postimg.cc/K8hb6jRy/rotation-jpg.jpg)](https://postimg.cc/BXpRDqTh)  
+[![rotation.png](https://i.postimg.cc/xCDFCNV0/rotation.png)](https://postimg.cc/94bBgMfS)  
 # Coordinate systems
 > World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
