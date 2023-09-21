@@ -1,17 +1,14 @@
 # Rigid body transformation
 [![rigib-body.png](https://i.postimg.cc/pV3RBpZH/rigib-body.png)](https://postimg.cc/YjN5r2Zn)  
-Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are 
-$$
-P_1
-$$ and 
-$$
-P_2
-$$respectively:
+Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are P_1 and P_2 respectively:
 
 
 $$
-P_1 = (x_1,y_1,z_1)
+P_1 = (x_1,y_1,z_1) ,
 p_2 = (x_2,y_2,z_2)
+$$
+$$
+p_2 = R p_1 + t
 $$
 
 ## Translation
