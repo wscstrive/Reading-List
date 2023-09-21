@@ -36,13 +36,15 @@ Degrees of freedom: 6 (3 rotations and 3 translations)
 Rotation matrix: _3*3_? Rotation around an axis affects other axes, and the coordinates are related to each other  
 Translation matrix: _3*1_? coordinates are independent of each other  
 ## Translation
-![translation](https://github.com/elleryw0518/MVS/assets/101634608/becc16d4-1ba0-434e-91e5-864742a70a33)
+![translation](https://github.com/elleryw0518/MVS/assets/101634608/03f8c570-cc81-496e-bd01-9a9adbb730ec)
+
 ## Rotation
 ![rotation](https://github.com/elleryw0518/MVS/assets/101634608/d885560e-3a30-43e9-8379-11204747e3cf)
 # Coordinate systems
 > World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
-![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/dfcde746-8b16-4397-9915-375ce38dccf2)
+![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae)
+
 > The transformation from the world coordinate system to the camera coordinate system is a rigid body transformation and does not cause deformation.
 
 ## Camera coordinate system -> Pixel coordinate system
