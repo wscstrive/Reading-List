@@ -50,7 +50,7 @@ Translation matrix: _3*1_? coordinates are independent of each other
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae" alt="world- camera" width="300px">  
 
-- This transformation is a rigid body transformation and does not cause deformation. The world coordinate system is a special coordinate system that was introduced because of the camera to determine the position of each thing. So, we only need to align the camera coordinate system with the world coordinate system.  
+This transformation is a rigid body transformation and does not cause deformation. The world coordinate system is a special coordinate system that was introduced because of the camera to determine the position of each thing. So, we only need to align the camera coordinate system with the world coordinate system.  
 
 $$
 \begin{bmatrix}
