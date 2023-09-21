@@ -1,5 +1,6 @@
 # Rigid body transformation
-![rigib_body](https://github.com/elleryw0518/MVS/assets/101634608/6acf03ea-423c-4f51-acd6-a9601b1736a3)  
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/6acf03ea-423c-4f51-acd6-a9601b1736a3" alt="rigib_body" width="400px">  
+
 Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are P1 and P2 respectively:
   
 $$
