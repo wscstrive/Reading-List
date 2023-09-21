@@ -43,7 +43,7 @@ Translation matrix: _3*1_? coordinates are independent of each other
 # Coordinate systems
 > World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
-![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae)  
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae" alt="world- camera" width="300px">
 - This transformation is a rigid body transformation and does not cause deformation. The world coordinate system is a special coordinate system that was introduced because of the camera to determine the position of each thing. So, we only need to align the camera coordinate system with the world coordinate system.  
 
 $$
@@ -78,7 +78,6 @@ Z_w \\
 $$  
 
 ## Camera coordinate system -> Image coordinate system
-![camera- image](https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888)
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
 
 
