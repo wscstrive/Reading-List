@@ -98,11 +98,13 @@ $$
 The unit of the Image coordinate system is mm, which is a physical unit, while the unit of the Pixel coordinate system is pixel. We usually describe a pixel in terms of rows and columns. So the conversion between the two is as follows: where dx and dy represent how many mm each column and each row represent, that is, 1 (pixel) = dx (mm).  
 
 $$
-\left\{\begin{matrix}
+\left\{
+\begin{matrix}
 u = \frac{x}{dx} + u_0 
 \\
-v = \frac{y}{d_y} + v_0
-\end{matrix}\right.
+v = \frac{y}{dy} + v_0
+\end{matrix}
+\right.
 $$
 
 $$
