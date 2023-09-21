@@ -1,7 +1,7 @@
 # MVS
 > Reconstructing a 3D World from 2D Images
 
-## :robot:	 Learning-based MVS methods
+## :bookmark_tabs:	 Learning-based MVS methods
 :books:  [Preliminaries of MVS](Preliminaries/)    
 :star:  Datasets: *DTU, BlendedMVS, Tanks and Temples, ETH3D*  
 |  | Abbreviation & Notes | Title | Years | Paper & Code | Rating |
