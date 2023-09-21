@@ -1,7 +1,5 @@
 # Rigid body transformation
-![rigib-body.png](https://i.postimg.cc/pV3RBpZH/rigib-body.png)
 ![rigib_body](https://github.com/elleryw0518/MVS/assets/101634608/6acf03ea-423c-4f51-acd6-a9601b1736a3)
-
 Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are P1 and P2 respectively:
   
 $$
@@ -38,12 +36,13 @@ Degrees of freedom: 6 (3 rotations and 3 translations)
 Rotation matrix: _3*3_? Rotation around an axis affects other axes, and the coordinates are related to each other  
 Translation matrix: _3*1_? coordinates are independent of each other  
 ## Translation
-[![translation.png](https://i.postimg.cc/fL6NKRdy/translation.png)](https://postimg.cc/ygXt6BvC)
+![translation](https://github.com/elleryw0518/MVS/assets/101634608/becc16d4-1ba0-434e-91e5-864742a70a33)
 ## Rotation
-[![rotation.png](https://i.postimg.cc/xCDFCNV0/rotation.png)](https://postimg.cc/94bBgMfS)  
+![rotation](https://github.com/elleryw0518/MVS/assets/101634608/d885560e-3a30-43e9-8379-11204747e3cf)
 # Coordinate systems
 > World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
+![world- camera](https://github.com/elleryw0518/MVS/assets/101634608/dfcde746-8b16-4397-9915-375ce38dccf2)
 > The transformation from the world coordinate system to the camera coordinate system is a rigid body transformation and does not cause deformation.
 
 ## Camera coordinate system -> Pixel coordinate system
