@@ -36,7 +36,7 @@ Degrees of freedom: 6 (3 rotations and 3 translations)
 Rotation matrix: _3*3_? Rotation around an axis affects other axes, and the coordinates are related to each other  
 Translation matrix: _3*1_? coordinates are independent of each other  
 ## Translation
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/03f8c570-cc81-496e-bd01-9a9adbb730ec" alt="translation" width="600px">  
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/03f8c570-cc81-496e-bd01-9a9adbb730ec" alt="translation" width="350px">  
 
 ## Rotation
 ![rotation](https://github.com/elleryw0518/MVS/assets/101634608/d885560e-3a30-43e9-8379-11204747e3cf)
