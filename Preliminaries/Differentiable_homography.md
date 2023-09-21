@@ -42,9 +42,12 @@ Translation matrix: _3*1_? coordinates are independent of each other
 # Coordinate systems
 > World coordinate system, Camera coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
+> The transformation from the world coordinate system to the camera coordinate system is a rigid body transformation and does not cause deformation.
+
 ## Camera coordinate system -> Pixel coordinate system
 
 # Homography_warp
 
 # Reference
-[深入理解旋转矩阵和平移向量的本质](https://zhuanlan.zhihu.com/p/141597984)
+1. [深入理解旋转矩阵和平移向量的本质](https://zhuanlan.zhihu.com/p/141597984)
+2. [【相机标定】四个坐标系之间的变换关系](https://cloud.tencent.com/developer/article/1820935)
