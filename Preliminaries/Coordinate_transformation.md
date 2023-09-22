@@ -171,7 +171,7 @@ Y_w \\
 Z_w \\
 1
 \end{bmatrix}
-=M_1\cdot M_2\cdot \mathbf{X}_w
+=\mathbf{M_1}\cdot \mathbf{M_2}\cdot \mathbf{X}_w
 $$
 
 where fx,fx is the normalized focal length, (f_x, f_y, c_x, c_y) is only related to the internal transformation of the camera and  M_1 is called the internal camera parameter. (R, T) are determined by the camera's orientation relative to the world coordinate system, M_2 is called the camera's external parameters.
