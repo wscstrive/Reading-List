@@ -11,7 +11,7 @@ Homography is a concept in projective geometry, also known as projective transfo
 
 
 $$
-\mathbf {p}_2 = H\cdot \mathbf{p_r}
+\mathbf {p}_2 = H\cdot \mathbf{p_1}
 $$
 
 $$
