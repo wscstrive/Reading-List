@@ -130,6 +130,7 @@ $$
 ## World coordinate system -> Camera coordinate system
 
 $$
+Z_w
 \begin{bmatrix}
 u \\
 v \\
