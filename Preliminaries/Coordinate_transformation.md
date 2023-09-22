@@ -90,7 +90,8 @@ $$
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
   
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/db76c20c-5947-46f0-850e-9ec83c9e0592" alt="camera-image" width="200px">    
-where f is focal length.
+where f is focal length.  
+
 ## Image coordinate system -> Pixel coordinate system
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/7c5817db-7ce3-46c9-a776-f03773c7fef9" alt="image- pixel" width="300px">  
@@ -153,8 +154,27 @@ X_w \\
 Y_w \\
 Z_w \\
 1
+\end{bmatrix} =
+\begin{bmatrix}
+f_x & 0 & c_x & 0 \\
+0 & f_y & c_y & 0 \\
+0 & 0 & 1 & 0 
 \end{bmatrix} 
+\begin{bmatrix}
+R_{3\times 3} & T_{3\times 1} \\
+0^T_{1\times 3} & 1
+\end{bmatrix}
+\begin{bmatrix}
+X_w \\
+Y_w \\
+Z_w \\
+1
+\end{bmatrix}
+=M_1\cdot M_2\cdot \mathbf{X}_w
 $$
+
+where fx,fx is the normalized focal length, (f_x, f_y, c_x, c_y) is only related to the internal transformation of the camera and  M_1 is called the internal camera parameter. (R, T) are determined by the camera's orientation relative to the world coordinate system, M_2 is called the camera's external parameters.
+
 
 # Reference
 1. [深入理解旋转矩阵和平移向量的本质](https://zhuanlan.zhihu.com/p/141597984)
