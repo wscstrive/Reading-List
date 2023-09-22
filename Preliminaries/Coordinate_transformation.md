@@ -7,7 +7,8 @@ $$
 p_2 = R p_1 + t,\ p_1=(x, y, z),\ p_2=(x', y', z') 
 $$  
 
-where R is rotation matrix, t is translation matrix.
+> where R is rotation matrix, t is translation matrix.
+
 i.e.,:  
 
 $$
@@ -47,7 +48,7 @@ Translation matrix: _3*1_? coordinates are independent of each other
 # :balloon: Coordinate systems
 - World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
-> Rigid body: just change direction and position, remain size and shape
+- Rigid body: just change direction and position, remain size and shape
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/9737703f-520c-4dcd-9366-4e235df499ae" alt="world- camera" width="300px">  
 
@@ -85,20 +86,20 @@ Z_w \\
 $$  
 
 ## Camera coordinate system -> Image coordinate system
-> perspective projection: change object position and shape
+- perspective projection: change object position and shape
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
   
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/db76c20c-5947-46f0-850e-9ec83c9e0592" alt="camera-image" width="200px">    
-where f is focal length.  
+> where f is focal length.  
 
 ## Image coordinate system -> Pixel coordinate system
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/7c5817db-7ce3-46c9-a776-f03773c7fef9" alt="image- pixel" width="300px">  
 
 
-:warning: These two coordinate systems are easily confused  
-The unit of the Image coordinate system is mm, which is a physical unit, while the unit of the Pixel coordinate system is pixel. We usually describe a pixel in terms of rows and columns. So the conversion between the two is as follows: where dx and dy represent how many mm each column and each row represent, that is, 1 (pixel) = dx (mm).  
+- :warning: These two coordinate systems are easily confused  
+- The unit of the Image coordinate system is mm, which is a physical unit, while the unit of the Pixel coordinate system is pixel. We usually describe a pixel in terms of rows and columns. So the conversion between the two is as follows: where dx and dy represent how many mm each column and each row represent, that is, 1 (pixel) = dx (mm).  
 
 $$
 \left\{
@@ -174,7 +175,7 @@ Z_w \\
 =\mathbf{M_1}\cdot \mathbf{M_2}\cdot \mathbf{X}_w
 $$
 
-where fx,fx is the normalized focal length, (f_x, f_y, c_x, c_y) is only related to the internal transformation of the camera and  M_1 is called the internal camera parameter. (R, T) are determined by the camera's orientation relative to the world coordinate system, M_2 is called the camera's external parameters.
+> where fx,fx is the normalized focal length, (f_x, f_y, c_x, c_y) is only related to the internal transformation of the camera and  M_1 is called the internal camera parameter. (R, T) are determined by the camera's orientation relative to the world coordinate system, M_2 is called the camera's external parameters.
 
 
 # Reference
