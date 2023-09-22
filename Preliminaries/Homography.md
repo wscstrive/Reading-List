@@ -2,12 +2,23 @@
 # :book: Knowledge introduction
 1. [coordinate_trans](Preliminaries/Coordinate_transformation.md)
 
-# plane_sweeping
+# plane_sweeping  
+
+- Assumption: All objects only have diffuse reflection, and define a near plane and a far plane, and it must be ensured that the object is located between the two planes, and then the space between the near plane and the far plane can be divided by a series of dense parallel planes.
+- Input: A series of calibrated photos and the projection matrix corresponding to the shooting camera
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/24059444-b3b7-4434-be1a-794b32cb31fd" alt="plane_sweeping" width="300px">  
+<img src="ttps://github.com/elleryw0518/MVS/assets/101634608/29519eaa-ae7a-4766-8a56-1df5de43f9c5" alt="plane_sweeping1" width="300px"> 
+
+> epipolar plane π: The plane composed of two camera coordinate points and the measured object point
+> epipolar line l: The intersection of the polar plane and the graph plane
+
+According to the epipolar feature, that is, the matching point on another image must be on the corresponding epipolar line. By giving a reference point o and an epipolar line, we can reduce the full graph search to searching along the epipolar line.
+
 
 
 # homography_warp  
 
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/40dfcd27-b0ec-47ca-817c-7baea371bafb" alt="homo1" width="300px">  
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/40dfcd27-b0ec-47ca-817c-7baea371bafb" alt="homo1" width="300px">   
 
 
 Homography is a concept in projective geometry, also known as projective transformation. It maps points (three-dimensional homogeneous vectors) on one projective plane to another projective plane, and maps straight lines into straight lines, which has line-preserving properties. In general, homography is a linear transformation about three-dimensional homogeneous vectors, which can be represented by a 3*3 non-singular matrix H.
