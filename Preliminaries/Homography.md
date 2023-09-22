@@ -4,11 +4,13 @@
 
 # homography_warp  
 
+![homo1](https://github.com/elleryw0518/MVS/assets/101634608/9b0f73c0-9773-4313-b429-9aa59c644837)
+
 Homography transformation belongs to projective transformations and is commonly used to align one camera view to another. It can be roughly represented as follows:  
 
 
 $$
-\mathbf {p}_2 = H\cdot \mathbf{p_1}
+\mathbf {p}_2 = H\cdot \mathbf{p_r}
 $$
 
 $$
@@ -36,3 +38,4 @@ y_1 \\
 \end{bmatrix}
 $$
 
+![homo](https://github.com/elleryw0518/MVS/assets/101634608/7c29db0a-25d7-4815-80e6-3f0dad8fb6ee)
