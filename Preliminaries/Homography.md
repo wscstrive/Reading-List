@@ -7,7 +7,7 @@
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/40dfcd27-b0ec-47ca-817c-7baea371bafb" alt="homo1" width="300px">  
 
 
-单应 (Homography) 是射影几何中的概念，又称为射影变换。它把一个射影平面上的点 (三维齐次矢量) 映射到另一个射影平面上，并且把直线映射为直线，具有保线性质。总的来说，单应是关于三维齐次矢量的一种线性变换，可以用一个3*3的非奇异矩阵H表示。
+Homography is a concept in projective geometry, also known as projective transformation. It maps points (three-dimensional homogeneous vectors) on one projective plane to another projective plane, and maps straight lines into straight lines, which has line-preserving properties. In general, homography is a linear transformation about three-dimensional homogeneous vectors, which can be represented by a 3*3 non-singular matrix H.
 
 
 $$
