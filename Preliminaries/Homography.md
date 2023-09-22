@@ -7,7 +7,7 @@
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/40dfcd27-b0ec-47ca-817c-7baea371bafb" alt="homo1" width="300px">  
 
 
-Homography transformation belongs to projective transformations and is commonly used to align one camera view to another. It can be roughly represented as follows:  
+Homography is a concept in projective geometry, also known as projective transformation. It maps points (three-dimensional homogeneous vectors) on one projective plane to another projective plane, and maps straight lines into straight lines, which has line-preserving properties. In general, homography is a linear transformation about three-dimensional homogeneous vectors, which can be represented by a 3*3 non-singular matrix H. It can be roughly represented as follows:  
 
 
 $$
@@ -41,3 +41,5 @@ $$
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/7c29db0a-25d7-4815-80e6-3f0dad8fb6ee" alt="homo" width="400px">  
 
+# Reference
+[单应变换 | Homography](http://liuxiao.org/kb/3dvision/geometry/%E5%8D%95%E5%BA%94%E5%8F%98%E6%8D%A2-homography/)
