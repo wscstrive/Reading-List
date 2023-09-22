@@ -1,3 +1,7 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # :book: Knowledge introduction
 1. [coordinate_trans](Preliminaries/Coordinate_transformation.md)
 
@@ -5,9 +9,10 @@
 
 Homography transformation belongs to projective transformations and is commonly used to align one camera view to another. It can be roughly represented as follows:  
 
+
 $$
-\mathbf{p}_1
-=
+\mathbf{p}_1 
+= 
 \begin{bmatrix}
 x_1 \\
 y_1 \\
