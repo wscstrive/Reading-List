@@ -1,4 +1,4 @@
-# :ballon: Rigid body transformation
+# :balloon: Rigid body transformation
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/6acf03ea-423c-4f51-acd6-a9601b1736a3" alt="rigib_body" width="400px">  
 
 Assume that the coordinates of a point P in the Euclidean space in the two coordinate systems are P1 and P2 respectively:  
@@ -44,7 +44,7 @@ Translation matrix: _3*1_? coordinates are independent of each other
 
 ![rotation](https://github.com/elleryw0518/MVS/assets/101634608/d885560e-3a30-43e9-8379-11204747e3cf)  
 
-# :ballon: Coordinate systems
+# :balloon: Coordinate systems
 - World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
 ## World coordinate system -> Camera coordinate system
 > Rigid body: just change direction and position, remain size and shape
@@ -126,6 +126,7 @@ y \\
 1
 \end{bmatrix}
 $$
+## World coordinate system -> Camera coordinate system
 
 
 # Reference
