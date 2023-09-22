@@ -8,20 +8,20 @@ Homography transformation belongs to projective transformations and is commonly 
 
 
 $$
-\mathbf {p}_1 = H\cdot \mathbf{p_2}
+\mathbf {p}_2 = H\cdot \mathbf{p_1}
 $$
 
 $$
 \Longrightarrow 
 \begin{bmatrix}
-x_1 \\
-y_1 \\
+x_2 \\
+y_2 \\
 1
 \end{bmatrix}=
 H
 \begin{bmatrix}
-x_2 \\
-y_2 \\
+x_1 \\
+y_1 \\
 1
 \end{bmatrix}=
 \begin{bmatrix}
@@ -30,8 +30,8 @@ h_{21} & h_{22} & h_{23} \\
 h_{31} & h_{32} & h_{33}
 \end{bmatrix}
 \begin{bmatrix}
-x_2 \\
-y_2 \\
+x_1 \\
+y_1 \\
 1
 \end{bmatrix}
 $$
