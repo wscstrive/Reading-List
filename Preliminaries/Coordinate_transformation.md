@@ -127,7 +127,31 @@ y \\
 \end{bmatrix}
 $$
 ## World coordinate system -> Camera coordinate system
-
+\begin{bmatrix}
+u \\
+v \\
+1
+\end{bmatrix} =
+\begin{bmatrix}
+\frac{1}{dx} & 0 & u_0 \\
+0 & \frac{1}{dx} & v_0 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+f & 0 & 0 & 0\\ 
+0 & f & 0 & 0 \\
+0 & 0 & 1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+R & T \\
+0^T & 1
+\end{bmatrix}
+\begin{bmatrix}
+X_w \\
+Y_w \\
+Z_w \\
+1
+\end{bmatrix} 
 
 # Reference
 1. [深入理解旋转矩阵和平移向量的本质](https://zhuanlan.zhihu.com/p/141597984)
