@@ -39,11 +39,13 @@ Rotation matrix: _3*3_? Rotation around an axis affects other axes, and the coor
 Translation matrix: _3*1_? coordinates are independent of each other  
 ## Translation
 
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/03f8c570-cc81-496e-bd01-9a9adbb730ec" alt="translation" width="350px">  
+<img src="https://github.com/elleryw0518/MVS/assets/101634608/a7e3880d-ea29-4da0-9928-1a09f58e5659" alt="translate" width="350px">  
 
 ## Rotation
 
-![rotation](https://github.com/elleryw0518/MVS/assets/101634608/d885560e-3a30-43e9-8379-11204747e3cf)  
+![2drotate](https://github.com/elleryw0518/MVS/assets/101634608/019ff453-eb27-43b7-a2cf-aa6f14c3fb75)  
+
+![3drotate](https://github.com/elleryw0518/MVS/assets/101634608/74fd03ed-31b2-4fd2-b34e-6b531fe763d4)
 
 # :balloon: Coordinate systems
 - World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
