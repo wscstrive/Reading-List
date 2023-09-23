@@ -43,13 +43,15 @@ Translation matrix: _3*1_? coordinates are independent of each other
 
 ## Rotation
 
+- 2D Rotation operation
+
 ![2drotate](https://github.com/elleryw0518/MVS/assets/101634608/019ff453-eb27-43b7-a2cf-aa6f14c3fb75)  
 
-> 2D Rotation operation
+- 3D Rotation operation
 
 ![3drotate](https://github.com/elleryw0518/MVS/assets/101634608/74fd03ed-31b2-4fd2-b34e-6b531fe763d4)  
 
-> 3D Rotation operation
+
 
 # :balloon: Coordinate systems
 - World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
