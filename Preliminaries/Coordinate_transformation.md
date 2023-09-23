@@ -38,14 +38,18 @@ Degrees of freedom: 6 (3 rotations and 3 translations)
 Rotation matrix: _3*3_? Rotation around an axis affects other axes, and the coordinates are related to each other  
 Translation matrix: _3*1_? coordinates are independent of each other  
 ## Translation
-
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/a7e3880d-ea29-4da0-9928-1a09f58e5659" alt="translate" width="350px">  
+ 
+![translate](https://github.com/elleryw0518/MVS/assets/101634608/44ac9cb5-1070-43f9-8dca-70c60ea652ef)
 
 ## Rotation
 
 ![2drotate](https://github.com/elleryw0518/MVS/assets/101634608/019ff453-eb27-43b7-a2cf-aa6f14c3fb75)  
 
-![3drotate](https://github.com/elleryw0518/MVS/assets/101634608/74fd03ed-31b2-4fd2-b34e-6b531fe763d4)
+> 2D Rotation operation
+
+![3drotate](https://github.com/elleryw0518/MVS/assets/101634608/74fd03ed-31b2-4fd2-b34e-6b531fe763d4)  
+
+> 3D Rotation operation
 
 # :balloon: Coordinate systems
 - World coordinate system, Camera coordinate system, Image coordinate system, and Pixel coordinate system.
@@ -92,7 +96,7 @@ $$
 
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
   
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/db76c20c-5947-46f0-850e-9ec83c9e0592" alt="camera-image" width="200px">  
+![camera-image](https://github.com/elleryw0518/MVS/assets/101634608/945aab9a-7185-485b-99d2-601e935ae762)
 
 
 > where f is focal length.  
