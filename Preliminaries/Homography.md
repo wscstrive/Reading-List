@@ -9,8 +9,8 @@
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/24059444-b3b7-4434-be1a-794b32cb31fd" alt="plane_sweeping" width="300px">  
 <img src="https://github.com/elleryw0518/MVS/assets/101634608/29519eaa-ae7a-4766-8a56-1df5de43f9c5" alt="plane_sweeping1" width="300px"> 
 
-> epipolar plane π: The plane composed of two camera coordinate points and the measured object point
-> epipolar line l: The intersection of the polar plane and the graph plane
+> epipolar plane π: The plane composed of two camera coordinate points and the measured object point  
+> epipolar line l: The intersection of the polar plane and the graph plane  
 
 According to the epipolar feature, that is, the matching point on another image must be on the corresponding epipolar line. By giving a reference point o and an epipolar line, we can reduce the full graph search to searching along the epipolar line.
 
