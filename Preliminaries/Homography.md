@@ -11,6 +11,7 @@
 
 > epipolar plane π: The plane composed of two camera coordinate points and the measured object point  
 > epipolar line l: The intersection of the polar plane and the graph plane  
+> Image plane I1, I2: The image plane is actually behind the optical center. It is equivalent to bringing it to the front, but it is more intuitive to understand 
 
 According to the epipolar feature, that is, the matching point on another image must be on the corresponding epipolar line. By giving a reference point o and an epipolar line, we can reduce the full graph search to searching along the epipolar line.
 
