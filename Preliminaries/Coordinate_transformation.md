@@ -94,10 +94,7 @@ $$
 ## Camera coordinate system -> Image coordinate system
 - perspective projection: change object position and shape
 
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/40e405ec-e0df-4ba7-9dde-14a3e5e5b888" alt="camera-image" width="300px">
-  
-![camera-image](https://github.com/elleryw0518/MVS/assets/101634608/945aab9a-7185-485b-99d2-601e935ae762)
-
+![camera- image](https://github.com/elleryw0518/MVS/assets/101634608/aad12fc9-7ee8-49e1-8b15-03de9f41a192)
 
 > where f is focal length.  
 
