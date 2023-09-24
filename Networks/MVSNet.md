@@ -4,7 +4,8 @@
 > MVS is a core problem of CV.Traditional MVS have shown great results.
 - :sparkles: motivation
 > Traditional MVS rely on hand-crafted similarity metric and engineered  regularization result in can't handle challenge scenes. Rencent MVS that using CNN to improve quanlity, but theses methods fails to fully use multi-view information and restricts by huge memory consumption of 3D volume.
-- result:  
+- result:
+ 
 *DTU*  
 | Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
 | :-: | :-: | :-: | :-: | :-: |
