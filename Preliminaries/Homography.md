@@ -54,7 +54,7 @@ y_1 \\
 \end{bmatrix}
 $$
 
-<img src="https://github.com/elleryw0518/MVS/assets/101634608/7c29db0a-25d7-4815-80e6-3f0dad8fb6ee" alt="homo" width="400px">  
+<img width="1215" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/19f65314-e7f7-4366-9a54-ca1504a22a2b">
 
 
 # Reference
