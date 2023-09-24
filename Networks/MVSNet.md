@@ -5,14 +5,16 @@
 - :sparkles: Motivation
 > Traditional MVS rely on hand-crafted similarity metric and engineered regularization result in can't handle challenge scenes. Rencent MVS that using CNN to improve quanlity, but theses methods fails to fully use multi-view information and restricts by huge memory consumption of 3D volume.
 - Key insight
-> Encode camera geometries through differentiable homography warping to build 3D cost volume
-> Enable end-to-end training
-> Adapt arbitrary number of input images
-> Multi-scale 3D convolutions and regree inital depth map
+> Encode camera geometries through differentiable homography warping to build 3D cost volume  
+> Enable end-to-end training  
+> Adapt arbitrary number of input images  
+> Multi-scale 3D convolutions and regree inital depth map  
 > refine the depth map
+
 - Contribution
 > 1. 3D cost volume is built upon the camera frustum
 > 2. decouple MVS to per-view depth map estiamtion, which make large-scale reconstruction
+> 3. adapt arbitrary number of input images  
 - result
  
 *DTU*  
