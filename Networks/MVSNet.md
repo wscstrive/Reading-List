@@ -35,8 +35,9 @@
 ### Feature extract
 - Input: N * RGB images with 3✖️H✖️W resolution
 
+
 $$
-\left\{{\mathbf{I}_i\in \mathbb{R}^{3\times H\times W} }\right\}_{i=0}^{N-1}
+\left\{\mathbf{I}_i\in \mathbb{R}^{3\times H\times W}\right\}_{i=0}^{N-1}
 $$
 
 - Ouput: feature maps with C✖️H/4✖️W/4 resolution
