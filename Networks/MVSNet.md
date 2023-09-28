@@ -46,5 +46,7 @@
 - The paper says that downsampling can embed initial neighbor information into the feature channel of the final output and won't lose useful context information (this needs to be discussed, I feel that an fpn design like cascade can better retain the initial information)
 
 ### Cost Volume constrution
-  
+
+Differentiable homography
+preliminaries
 ### Depth Map
