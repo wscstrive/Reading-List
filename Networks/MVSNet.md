@@ -47,6 +47,18 @@
 
 ### Cost Volume constrution
 
-[Differentiable homography](Preliminaries/Homography.md)
+[Differentiable homography](Preliminaries/Homography.md)(i think this equation that in paper is wrong)
+Let me talk about my own views, this operation is more like to say that first establishing a three-dimensional space that can tolerate the feature body, and then putting the source feature body into it. Through using internal and external parameter of the two camera coordinate systems to transformation, and then using sampling operation fills the gaps. In a sense, the source feature volume at this time has become a feature volume from reference camera's perspective, but the information contained comes from the source feature volume.->feature volume is add depth demension.
+
+<img width="427" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/97afc739-6598-4957-83ff-3ae02522de24">
+
+Cost Metric
+To adapt arbitrary number of input views, author use variance-based method to build a cost volume. Variance provide information about the feature differences.
+
+<img width="476" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/5e6d9370-ac21-4f8a-9968-171d305a1850">
+
+There are two improvements in subsequent methods. One is to increase the importance weight of different views, and the other is to adopt the group correlation cost measurement method in pwcnet.
 
 ### Depth Map
+The paper uses 3D-CNN to fuse spatial information of the cost volume to ensure that each pixel information will take more consideration of 3D information. In addition, 3D-CNN will reduce the feature channel of the cost volume from 32 to 1.   
+Personally, I feel that this step is a bit like a fully connected classification method. For each depth plane, we compress all feature channel information into a depth plane, totally N depth plane, and use the characteristics of deep learning to update it to the best attributes , thereby judging which plane this voxel is more suitable to be classified on.
