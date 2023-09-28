@@ -35,7 +35,8 @@
 ### Feature extract
 - Input: RGB images with 3✖️H✖️W resolution
 - Ouput: feature maps with C✖️H/4✖️W/4 resolution
-
+- Feature extraction consists of eight 2D convolutional neural networks, and downsampling operations x2 are performed on the 3rd and 6th layers. After each convolutional layer, BN and ReLu are used to improve the stability of the network. 
+- Through two downsampling operations, on the one hand, it can reduce the amount of calculation in subsequent tasks, and secondly, downsampling can embed neighbor information into the feature channel of the final output.
 
 ### Cost Volume constrution
   
