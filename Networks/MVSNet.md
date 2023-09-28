@@ -33,9 +33,20 @@
 <img width="1399" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/e5c74cad-d95f-447e-bca9-53b037e8d098">
 
 ### Feature extract
-- Input: RGB images with 3✖️H✖️W resolution
+- Input: N * RGB images with 3✖️H✖️W resolution
+
+$$
+\left\{{\mathbf{I}_i\in \mathbb{R}^{3\times H\times W} }\right\}_{i=0}^{N-1}
+$$
+
 - Ouput: feature maps with C✖️H/4✖️W/4 resolution
-- Feature extraction consists of eight 2D convolutional neural networks, and downsampling operations x2 are performed on the 3rd and 6th layers. After each convolutional layer, BN and ReLu are used to improve the stability of the network. 
+
+$$
+\left\{{\mathbf{F}_i\in \mathbb{R}^{32\times \frac{H}{4}\times \frac{W}{4}}}\right\}_{i=0}^{N-1}
+$$
+
+- Feature extraction consists of eight 2D convolutional neural networks, and downsampling operations x2 are performed on the 3rd and 6th layers. After each convolutional layer, BN and ReLu are used to improve the stability of the network.
+
 - The paper says that downsampling can embed initial neighbor information into the feature channel of the final output and won't lose useful context information (this needs to be discussed, I feel that an fpn design like cascade can better retain the initial information)
 
 ### Cost Volume constrution
