@@ -35,16 +35,11 @@
 ### Feature extract
 - Input: N * RGB images with 3✖️H✖️W resolution
 
-
-$$
-\left\{\mathbf{I}_i\in \mathbb{R}^{3\times H\times W}\right\}_{i=0}^{N-1}
-$$
+<img width="323" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/187b7c61-54cd-4b8c-8480-0d3a234a0423">
 
 - Ouput: feature maps with C✖️H/4✖️W/4 resolution
 
-$$
-\left\{{\mathbf{F}_i\in \mathbb{R}^{32\times \frac{H}{4}\times \frac{W}{4}}}\right\}_{i=0}^{N-1}
-$$
+<img width="360" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/79b5544b-8ccd-4832-b4be-0fa5ec031447">
 
 - Feature extraction consists of eight 2D convolutional neural networks, and downsampling operations x2 are performed on the 3rd and 6th layers. After each convolutional layer, BN and ReLu are used to improve the stability of the network.
 
