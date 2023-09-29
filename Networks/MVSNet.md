@@ -64,3 +64,20 @@ There are two improvements in subsequent methods. One is to increase the importa
 ### Depth Map
 The paper uses 3D-CNN to fuse spatial information of the cost volume to ensure that each pixel information will take more consideration of 3D information. In addition, 3D-CNN will reduce the feature channel of the cost volume from 32 to 1.   
 Personally, I feel that this step is a bit like a fully connected classification method. For each depth plane, we compress all feature channel information into a depth plane, totally N depth plane, and use the characteristics of deep learning to update it to the best attributes , thereby judging which plane this voxel is more suitable to be classified on.
+
+Then we will get a probability initial volume():
+
+<img width="305" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/227ba799-ceb5-4f14-b795-d5be1df7c089">
+
+Using softmax or argmax to generate final probability volume. Normalization to indicate which layer has greater probability is more intuitive than the initial probability volume:
+
+<img width="309" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/a8b2f2ee-f42a-4b4e-a01f-b2cd8f70adce">
+
+Finally, author compute the expectation value along the depth direction
+
+<img width="164" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/a6a099e3-2ab4-4493-8ec4-8388dc4835c3">
+
+### Loss
+Simple difference calculation between results and real ground truth, nothing novel
+
+<img width="477" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/3cd9302d-9063-4a34-ab54-2d2d8eb09430">
