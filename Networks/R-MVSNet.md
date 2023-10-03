@@ -2,14 +2,14 @@
 
 
 ## :sparkles: Motivation
-- Use GRU to convert the three-dimensional calculation amount of 3D-CNN into a sequence form in the depth direction.
+- 使用GRU将3D-CNN的三次方计算量转换为深度方向的序列形式的2次方
 
 ## Contribution
-- reduce computeral memory
-- :dizzy:	Provide new ideas for solving 3D regularization
+- 减少内存消耗
+- :dizzy:	为后续循环神经网络处理mvs提供了新思路
 
 ## Think
-- Convert 3D to a series of 2D convolution operations, sacrificing time for memory. Although the memory consumption problem is solved, it raises new timing issues, but decomposing 3D CNN is a good starting point.
+- 💫将 3D 转换为一系列 2D 卷积运算，牺牲时间换内存。 虽然内存消耗问题得到了解决，但它引发了新的时序问题，而且损失了3D-CNN中对空间感知的信息的获取，但分解并处理 3D CNN 是一个很好的切入点。
 
 ## result
  
