@@ -10,9 +10,9 @@
 - refine the depth map
 
 ## Contribution
-- 1. 3D cost volume is built upon the camera frustum
-- 2. decouple MVS to per-view depth map estiamtion, which make large-scale reconstruction
-- 3. adapt arbitrary number of input images  
+- 3D cost volume is built upon the camera frustum
+- decouple MVS to per-view depth map estiamtion, which make large-scale reconstruction
+- adapt arbitrary number of input images  
 ## result
  
 *DTU*  
