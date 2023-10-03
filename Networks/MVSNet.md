@@ -78,6 +78,6 @@ Finally, author compute the expectation value along the depth direction
 <img width="164" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/a6a099e3-2ab4-4493-8ec4-8388dc4835c3">
 
 ### Loss
-Simple difference calculation between results and real ground truth, nothing novel
+Simple difference calculation between results and real ground truth
 
 <img width="477" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/3cd9302d-9063-4a34-ab54-2d2d8eb09430">
