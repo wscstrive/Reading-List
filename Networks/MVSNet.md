@@ -1,21 +1,21 @@
 # MVSNet: Depth Inference for Unstructured Multi-View Stereo (ECCV 2018)
 
-- Task
-> Infer the depth map for the reference image by one reference image align with several source images
-- :sparkles: Motivation
-> Traditional MVS rely on hand-crafted similarity metric and engineered regularization result in can't handle challenge scenes. Rencent MVS that using CNN to improve quanlity, but these methods fails to fully use multi-view information and restricts by huge memory consumption of 3D voxel.
-- Key insight
-> Encode camera geometries through differentiable homography warping to build 3D cost volume  
-> Enable end-to-end training  
-> Adapt arbitrary number of input images  
-> Multi-scale 3D convolutions and regree inital depth map  
-> refine the depth map
+## Task
+- Infer the depth map for the reference image by one reference image align with several source images
+## :sparkles: Motivation
+- Traditional MVS rely on hand-crafted similarity metric and engineered regularization result in can't handle challenge scenes. Rencent MVS that using CNN to improve quanlity, but these methods fails to fully use multi-view information and restricts by huge memory consumption of 3D voxel.
+## Key insight
+- Encode camera geometries through differentiable homography warping to build 3D cost volume  
+- Enable end-to-end training  
+- Adapt arbitrary number of input images  
+- Multi-scale 3D convolutions and regree inital depth map  
+- refine the depth map
 
-- Contribution
-> 1. 3D cost volume is built upon the camera frustum
-> 2. decouple MVS to per-view depth map estiamtion, which make large-scale reconstruction
-> 3. adapt arbitrary number of input images  
-- result
+## Contribution
+- 1. 3D cost volume is built upon the camera frustum
+- 2. decouple MVS to per-view depth map estiamtion, which make large-scale reconstruction
+- 3. adapt arbitrary number of input images  
+## result
  
 *DTU*  
 | Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
