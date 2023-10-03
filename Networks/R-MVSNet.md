@@ -22,7 +22,7 @@
 *Tanks and Temples*  
 | Model | Train view | Mean↑ | Family↑ | Francis↑ | Horse↑ | LightHouse↑ | M60↑ | Panther↑ | Playground↑ | Train↑ |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| R-MVSNet | 5 | 43.48 | 55.99 | 28.55 | 25.07 | 50.79 | 53.96 | 50.86 | 47.90 | 34.69 |
+| R-MVSNet | - | - | - | - | - | - | - | - | - | - |
 
 ## Network Architecture
 
