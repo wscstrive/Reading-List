@@ -1,7 +1,8 @@
 # MVSNet: Depth Inference for Unstructured Multi-View Stereo (ECCV 2018)
 
 ## :sparkles: Motivation
-- consumption of 3D voxel.
+- 传统的 MVS 依赖于手工设计的相似性度量和工程正则化，导致无法处理具有挑战性的场景。 最近的MVS使用CNN来提高质量，但这些方法未能充分利用多视图信息并且受到巨大内存的限制
+
 ## Key insight
 - Encode camera geometries through differentiable homography warping to build 3D cost volume  
 - Enable end-to-end training  
@@ -10,9 +11,10 @@
 - refine the depth map
 
 ## Contribution
-- 3D cost volume is built upon the camera frustum
-- decouple MVS to per-view depth map estiamtion, which make large-scale reconstruction
-- adapt arbitrary number of input images  
+- 利用单应性变换构建3D代价体
+- 将三维重建问题分解为逐视图的深度估计问题，并且是端到端的网络
+- 可以更加适应不同的输入图像数量
+
 ## result
  
 *DTU*  
