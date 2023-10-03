@@ -23,12 +23,13 @@
 *DTU*  
 | Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
 | :-: | :-: | :-: | :-: | :-: |
-| MVSNet | 5 | 0.396 | 0.527 | 0.462 |
+| R-MVSNet(D=256) | 3 | 0.385 | 0.459 | 0.422 |
+| R-MVSNet(D=512) | 3 | 0.383 | 0.452 | 0.417 |
 
 *Tanks and Temples*  
 | Model | Train view | Mean↑ | Family↑ | Francis↑ | Horse↑ | LightHouse↑ | M60↑ | Panther↑ | Playground↑ | Train↑ |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| MVSNet | 5 | 43.48 | 55.99 | 28.55 | 25.07 | 50.79 | 53.96 | 50.86 | 47.90 | 34.69 |
+| R-MVSNet | 5 | 43.48 | 55.99 | 28.55 | 25.07 | 50.79 | 53.96 | 50.86 | 47.90 | 34.69 |
 
 ## Network Architecture
 
