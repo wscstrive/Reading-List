@@ -3,17 +3,11 @@
 ## :sparkles: Motivation
 - 传统的 MVS 依赖于手工设计的相似性度量和工程正则化，导致无法处理具有挑战性的场景。 最近的MVS使用CNN来提高质量，但这些方法未能充分利用多视图信息并且受到巨大内存的限制
 
-## Key insight
-- Encode camera geometries through differentiable homography warping to build 3D cost volume  
-- Enable end-to-end training  
-- Adapt arbitrary number of input images  
-- Multi-scale 3D convolutions and regree inital depth map  
-- refine the depth map
-
 ## Contribution
 - 利用单应性变换构建3D代价体
 - 将三维重建问题分解为逐视图的深度估计问题，并且是端到端的网络
 - 可以更加适应不同的输入图像数量
+- 给MVS方向提供了一个整体流程，不管后续的recurrent-mvs还是casacde-mvs都是基于这个流程进行改进的，整体框架没有变换
 
 ## result
  
