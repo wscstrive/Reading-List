@@ -1,9 +1,7 @@
 # MVSNet: Depth Inference for Unstructured Multi-View Stereo (ECCV 2018)
 
-## Task
-- Infer the depth map for the reference image by one reference image align with several source images
 ## :sparkles: Motivation
-- Traditional MVS rely on hand-crafted similarity metric and engineered regularization result in can't handle challenge scenes. Rencent MVS that using CNN to improve quanlity, but these methods fails to fully use multi-view information and restricts by huge memory consumption of 3D voxel.
+- consumption of 3D voxel.
 ## Key insight
 - Encode camera geometries through differentiable homography warping to build 3D cost volume  
 - Enable end-to-end training  
@@ -49,23 +47,22 @@
 
 [Differentiable homography](Preliminaries/Homography.md)(i think this equation that in paper is wrong)
 
-This operation is more like to say that first establishing a three-dimensional space that can tolerate the feature body, and then putting the source feature body into it. Through using internal and external parameter of the two camera coordinate systems to transformation, and then using sampling operation fills the gaps. In a sense, the source feature volume at this time has become a feature volume from reference camera's perspective, but the information contained comes from the source feature volume.->feature volume is add depth demension.
+> 这个操作更像是说，先建立一个可以容纳特征体的三维空间，然后将源特征体放入其中。 通过利用两个相机坐标系的内参数和外参数进行变换将源特征体变换到参考相机角度下的特征体，并利用采样运算填补了变换后的空缺。 从某种意义上说，此时的源特征体已经成为参考相机角度的特征体，但其中包含的信息来自于源特征体。->特征体添加了深度维度。
 
 <img width="427" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/97afc739-6598-4957-83ff-3ae02522de24">
 
-Cost Metric
 
-To adapt arbitrary number of input views, author use variance-based method to build a cost volume. Variance provide information about the feature differences.
+- To adapt arbitrary number of input views, author use variance-based method to build a cost volume. Variance provide information about the feature differences.
 
 <img width="476" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/5e6d9370-ac21-4f8a-9968-171d305a1850">
 
-There are two improvements in subsequent methods. One is to increase the importance weight of different views, and the other is to adopt the group correlation cost measurement method in pwcnet.
+> 后续方法有两个改进。 一是增加不同观点的重要性权重，二是采用pwcnet中的分组相关成本衡量方法。
 
 ### Depth Map
-The paper uses 3D-CNN to fuse spatial information of the cost volume to ensure that each pixel information will take more consideration of 3D information. In addition, 3D-CNN will reduce the feature channel of the cost volume from 32 to 1.   
-Personally, I feel that this step is a bit like a fully connected classification method. For each depth plane, we compress all feature channel information into a depth plane, totally N depth plane, and use the characteristics of deep learning to update it to the best attributes , thereby judging which plane this voxel is more suitable to be classified on.
+- The paper uses 3D-CNN to fuse spatial information of the cost volume to ensure that each pixel information will take more consideration of 3D information. In addition, 3D-CNN will reduce the feature channel of the cost volume from 32 to 1.   
+> 个人感觉这一步有点像全连接分类方法。 对于每个深度平面，我们将所有特征通道信息压缩到一个深度平面，总共N个深度平面，并利用深度学习的特性将其更新为最佳属性，从而判断该体素更适合分类在哪个平面上。
 
-Then we will get a probability initial volume():
+Then we will get a probability initial volume:
 
 <img width="305" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/227ba799-ceb5-4f14-b795-d5be1df7c089">
 
