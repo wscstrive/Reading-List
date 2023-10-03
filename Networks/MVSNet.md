@@ -3,7 +3,7 @@
 - Task
 > Infer the depth map for the reference image by one reference image align with several source images
 - :sparkles: Motivation
-> Traditional MVS rely on hand-crafted similarity metric and engineered regularization result in can't handle challenge scenes. Rencent MVS that using CNN to improve quanlity, but theses methods fails to fully use multi-view information and restricts by huge memory consumption of 3D volume.
+> Traditional MVS rely on hand-crafted similarity metric and engineered regularization result in can't handle challenge scenes. Rencent MVS that using CNN to improve quanlity, but these methods fails to fully use multi-view information and restricts by huge memory consumption of 3D voxel.
 - Key insight
 > Encode camera geometries through differentiable homography warping to build 3D cost volume  
 > Enable end-to-end training  
@@ -43,13 +43,13 @@
 
 - Feature extraction consists of eight 2D convolutional neural networks, and downsampling operations x2 are performed on the 3rd and 6th layers. After each convolutional layer, BN and ReLu are used to improve the stability of the network.
 
-- The paper says that downsampling can embed initial neighbor information into the feature channel of the final output and won't lose useful context information (this needs to be discussed, I feel that an fpn design like cascade can better retain the initial information)
+- The paper says that downsampling can embed initial neighbor information into the feature channel of the final output and won't lose useful context information (this needs to be further discussed, I feel that an FPN design like cascade can better retain the initial information)
 
 ### Cost Volume constrution
 
 [Differentiable homography](Preliminaries/Homography.md)(i think this equation that in paper is wrong)
 
-Let me talk about my own views, this operation is more like to say that first establishing a three-dimensional space that can tolerate the feature body, and then putting the source feature body into it. Through using internal and external parameter of the two camera coordinate systems to transformation, and then using sampling operation fills the gaps. In a sense, the source feature volume at this time has become a feature volume from reference camera's perspective, but the information contained comes from the source feature volume.->feature volume is add depth demension.
+This operation is more like to say that first establishing a three-dimensional space that can tolerate the feature body, and then putting the source feature body into it. Through using internal and external parameter of the two camera coordinate systems to transformation, and then using sampling operation fills the gaps. In a sense, the source feature volume at this time has become a feature volume from reference camera's perspective, but the information contained comes from the source feature volume.->feature volume is add depth demension.
 
 <img width="427" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/97afc739-6598-4957-83ff-3ae02522de24">
 
