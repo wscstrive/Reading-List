@@ -12,8 +12,8 @@
 - refine the depth map
 
 ## Contribution
-- 1. reduce computeral memory.
-- 2. Provide new ideas for solving 3D regularization
+- reduce computeral memory.
+- Provide new ideas for solving 3D regularization
 
 ## Think
 - Convert 3D to a series of 2D convolution operations, sacrificing time for memory. Although the memory consumption problem is solved, it raises new timing issues, but decomposing 3D CNN is a good starting point.
