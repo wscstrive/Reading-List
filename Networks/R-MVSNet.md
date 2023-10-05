@@ -62,3 +62,23 @@ $$
 $$
 \mathrm{C}_r(t)=(1-\mathrm{U}(t) )\odot\mathrm{C}_r(t-1)+\mathrm{U}(t)\odot\mathrm{C}_u(t)    
 $$
+
+作者将每个平面层的代价体进行堆叠，对于初始状态的并分别采用三个卷积层将特征通道降为32-16-4-1（这地方有点疑惑他是怎么边进行GRU边降维的，感觉会影响信息的完整性），最后把所有平面层推叠在一起并使用softmax得到概率体。
+
+### Loss Function
+作者采用了交叉熵而不是回归方法，因为他在对深度平面切分时采用的逆深度值，因此深度间距无法保证平等（这里本文都没有提及关于逆深度的一个方法和过程，有点懵）
+
+$$
+Loss=\sum_{\mathbf{p} }(\sum_{i=1}^{D}-\mathrm{P}(i,\mathrm{p})\cdot log\mathrm{Q}(i,\mathrm{p})) 
+$$
+
+> 概率体进行了winner-take-all处理，Q是GT的1或0的mask值
+
+### depth map refinement
+
+为了缓解楼梯效应，作者增强了不同视图间的photo-consistency和平滑操作
+
+$$
+E^i(\mathrm{p})=E^i_{photo}(\mathrm{p})+E^i_{smooth}(\mathrm{p})
+=\mathcal{C}(\mathrm{I}_1(\mathrm{p}), \mathrm{I}_{i\to 1}(\mathrm{p}))+\sum_{\mathrm{p}'\in \mathcal{N}(\mathrm{p}) }\mathcal{S}(\mathrm{p},\mathrm{p}'  )  
+$$
