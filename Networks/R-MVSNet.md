@@ -36,8 +36,8 @@
 
 ### Recurrent regularization
 
-如大部分的RNN结构一样，作者对代价体的每个深度平面层进行序列的展开迭代计算。
-> update gate and reset gate
+- 如大部分的RNN结构一样，作者对代价体的每个深度平面层进行序列的展开迭代计算。
+重置门和更新门，
 
 $$
 \mathrm{R}(t) = \sigma_g(\mathrm{W}_r * [\mathrm{C}(t),\mathrm{C}_r(t-1)]+\mathrm{b}_r)
@@ -45,4 +45,20 @@ $$
 
 $$
 \mathrm{U}(t) = \sigma_g(\mathrm{W}_u * [\mathrm{C}(t),\mathrm{C}_r(t-1)]+\mathrm{b}_u)
+$$
+
+> 重置门注重前一时间步哪些信息应该被遗忘；而更新门在于前一时间步哪些信息应该被更新
+
+候选状态
+
+$$
+\mathrm{C}_u(t) = \sigma_c(\mathrm{W}_c * [\mathrm{C}(t),\mathrm{R}(t)\odot \mathrm{C}_r(t-1)]+\mathrm{b}_c)
+$$
+
+> 包含了当前时间步和前一时间步的中间状态，以控制重置门和更新门对本时间步的影响
+
+最后的更新状态（每一深度平面的代价体）
+
+$$
+\mathrm{C}_r(t)=(1-\mathrm{U}(t) )\odot\mathrm{C}_r(t-1)+\mathrm{U}(t)\odot\mathrm{C}_u(t)    
 $$
