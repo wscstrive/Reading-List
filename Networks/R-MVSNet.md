@@ -40,5 +40,9 @@
 > update gate and reset gate
 
 $$
-\mathrm{R}(t) = \sigma_g(\mathrm{C}(t) * [\mathrm{C}(t),\mathrm{C}_r(t-1)]+\mathrm{b}_r)
+\mathrm{R}(t) = \sigma_g(\mathrm{W}_r * [\mathrm{C}(t),\mathrm{C}_r(t-1)]+\mathrm{b}_r)
+$$
+
+$$
+\mathrm{U}(t) = \sigma_g(\mathrm{W}_u * [\mathrm{C}(t),\mathrm{C}_r(t-1)]+\mathrm{b}_u)
 $$
