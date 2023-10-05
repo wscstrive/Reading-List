@@ -28,3 +28,17 @@
 
 <img width="703" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/7a349e37-69ea-4e08-aa4e-f0541bf4b6d3">
 
+### Feature extract
+
+- 与MVSNet类似，八个卷积层，并分别在第三和第六层进行下采样来减少后续任务中的计算量
+
+> 中间省略了对cost volume construction的描写，直接对cost volume进行了处理
+
+### Recurrent regularization
+
+如大部分的RNN结构一样，作者对代价体的每个深度平面层进行序列的展开迭代计算。
+> update gate and reset gate
+
+$$
+\mathrm{R}(t) = \sigma_g(\mathrm{C}(t) * [\mathrm{C}(t),\mathrm{C}_r(t-1)]+\mathrm{b}_r)
+$$
