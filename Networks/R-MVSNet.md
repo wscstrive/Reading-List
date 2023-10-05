@@ -80,5 +80,8 @@ $$
 
 $$
 E^i(\mathrm{p})=E^i_{photo}(\mathrm{p})+E^i_{smooth}(\mathrm{p})
-=\mathcal{C}(\mathrm{I}_1(\mathrm{p}), \mathrm{I}_{i\to 1}(\mathrm{p}))+\sum_{\mathrm{p}'\in \mathcal{N}(\mathrm{p}) }\mathcal{S}(\mathrm{p},\mathrm{p}'  )  
+$$
+
+$$
+=\mathcal{C}(\mathrm{I}_1(\mathrm{p}),\mathrm{I}_{i\to 1}(\mathrm{p}))+\sum_{\mathrm{p}'\in \mathcal{N}(\mathrm{p}) }\mathcal{S}(\mathrm{p},\mathrm{p}')  
 $$
