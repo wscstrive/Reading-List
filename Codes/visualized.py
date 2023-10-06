@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
-# @Description: visualized
-# @Author: elleryw, NUIST
-# @Date: 2023-10-06 22:37:06
-# @LastEditTime:
+# utilities for visualized
+# by: Wangsc, NUIST
+# StartEditTime: 2023-10-06 22:37:06
+# LastEditTime:
+
 
 
 import numpy as np
