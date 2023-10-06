@@ -87,5 +87,3 @@ validation inputs: 3张640✖️512 views
 - image feature: 没看懂他的消融图
 - cost metric: 比较了方差和平均值在代价体构建上的不同
 - depth refinement: 有或没有的影响
-
-从结果图来看，5张输入图的效果最好，
