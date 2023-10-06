@@ -26,10 +26,10 @@
 <img width="698" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/4bc12e5e-6048-4ea6-9b81-64b599cafd22">
 
 ## network review
-- 作者首先利用特征金字塔网络将输入图像I分别三个阶段，第一阶段分辨率为输入图像的1/16，为最粗糙阶段；第二阶段为1/4；第三阶段为初始图像大小，网络总体被分为三个阶段，每个阶段分别是homography warp, cost volume construction and reguization, depth estimation
+- 作者首先利用特征金字塔网络将输入图像I分别三个阶段，第一阶段分辨率为输入图像的1/4，为最粗糙阶段；第二阶段为1/2；第三阶段为初始图像大小，网络总体被分为三个阶段，每个阶段分别是homography warp, cost volume construction and reguization, depth estimation
 
 ## coarse-to-fine manner
-- 作者首先会规定网络一个初始深度范围，如以往的方法一样，并对第一阶段进行基本的mvsnet流水线操作，得到了一张1/16的深度图； 
+- 作者首先会规定网络一个初始深度范围，如以往的方法一样，并对第一阶段进行基本的mvsnet流水线操作，得到了一张1/4的深度图； 
 - 随后，在进行第二阶段时，第一阶段输出的深度值规定为第二阶段的初始范围的中心平面，并在上下两侧分别进行拓展范围，然后继续基本的mvsnet流水线；  
 - 第三阶段重复第二阶段的过程，但深度范围的中心平面来自于第二阶段的深度图；  
 - 通过这样的方式，网络可以将资源更专注于更有意义的深度范围区域，保证效率的同时提高了结果。
