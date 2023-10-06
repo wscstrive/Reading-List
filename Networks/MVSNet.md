@@ -74,3 +74,18 @@ Finally, author compute the expectation value along the depth direction
 Simple difference calculation between results and real ground truth
 
 <img width="477" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/3cd9302d-9063-4a34-ab54-2d2d8eb09430">
+
+## experiments
+
+- datasets: dtu,t&t
+- input: 5张1600✖️1184 views(dtu), 5张1920✖️1056 views(t&t)
+
+## Ablation study
+
+validation inputs: 3张640✖️512 views
+- view number: 2,3,5
+- image feature: 没看懂他的消融图
+- cost metric: 比较了方差和平均值在代价体构建上的不同
+- depth refinement: 有或没有的影响
+
+从结果图来看，5张输入图的效果最好，
