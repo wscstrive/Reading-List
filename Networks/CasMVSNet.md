@@ -23,3 +23,5 @@
 
 # Network Architecture
 
+<img width="698" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/4bc12e5e-6048-4ea6-9b81-64b599cafd22">
+
