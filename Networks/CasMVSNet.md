@@ -40,4 +40,10 @@ $$
 \mathbf{H}_i^d=d\mathbf{K}_i \mathbf{T}_i \mathbf{T}_1^{-1} \mathbf{K}_1^{-1} 
 $$
 
+$$
+\Rightarrow \mathbf{H}_i^{(d_k+\bigtriangleup_{k+1}) }=(d_k+\bigtriangleup_{k+1})\mathbf{K}_i \mathbf{T}_i \mathbf{T}_1^{-1} \mathbf{K}_1^{-1} 
+$$
+
+△表示该阶段的残差拓展范围间隔
+
 > 网络很依赖于第一阶段的深度图输出，但目前来看这个流水线还没有被其他方法给取代
