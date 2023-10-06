@@ -40,9 +40,7 @@ $$
 \mathbf{H}_i^d=d\mathbf{K}_i \mathbf{T}_i \mathbf{T}_1^{-1} \mathbf{K}_1^{-1} 
 $$
 
-$$
-\Rightarrow \mathbf{H}_i^{(d_k+\bigtriangleup_{k+1}) }=(d_k+\bigtriangleup_{k+1})\mathbf{K}_i \mathbf{T}_i \mathbf{T}_1^{-1} \mathbf{K}_1^{-1} 
-$$
+<img width="722" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/f89c8db5-3e60-4ddb-b60f-e87db361a22c">
 
 △表示该阶段的残差拓展范围间隔
 
