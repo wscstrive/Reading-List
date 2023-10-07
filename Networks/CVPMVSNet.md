@@ -1,5 +1,7 @@
 # Cost Volume Pyramid Based Depth Inference for Multi-View Stereo(CVPR2020)
 
+> 与CasMVSNet不同种类的级联网络，也是个很有意思的结构，主要是她的准确度已经逼近了传统方法，这个真的很难得，值的一看
+
 ## :sparkles: Motivation
 - 
 
