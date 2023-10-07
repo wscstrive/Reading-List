@@ -32,9 +32,33 @@
 
 ### feature pyramid
 
-- 存在的方法对高分辨率图像进行多尺度特征提取，最后输出低分辨率图
+- 存在的方法对高分辨率图像进行多尺度特征提取，最后输出低分辨率图，作者提出的方法在低分辨率有着更多有用的信息
 - 首先构成L+1层的图像金字塔，然后采用特征提取网络以1/2为下采样率，对输入的图像进行下采样来获取不同尺度的特征图，相比于传统方法，减少了内存的同时提高了效果
 
 ### Cost Volume Pyramid
 
+- 首先在最粗糙的极端进行着，和MVSNet一样的homo_warp和基于variance-based cost volume construction操作
+- 对于不同尺度的金字塔连接，作者运用前一阶段的深度图上采样，并运功空间cost volume生成一个深度残差值。作为认为相邻像素的深度位移是相关的，常规的3D卷积可以给深度残差估计提供更有用的信息
+- 得到上一深度图的上采样（D↑），然后另深度残差深度间隔为（d=s/M），作者将不同深度平面上的点投影到了各个视图上，然后在采用基于varance-based cost volume construction进行构建
+> s为深度搜索范围，M是深度平面数量
+
+<img width="320" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/b965bbd2-80b0-4a1f-a5e2-da5e9305e04c">
+
+### Depth Map inference
+
+- 作者认为普通的采样操作会让采样点的距离过近而无法提供有效信息，作者采用投影参考点到源视图再反投影回参考图像优化采样点的位置
+- 粗阶段的深度图如常规一样，精细阶段是通过上一阶段的上采样深度图加上该阶段的期望值计算
+
+### Loss Function
+简单的L1损失函数
+
+## Experiments
+
+- GT：下采样到160✖️128
+- pyramid levels：2
+- depth hypothese：48（coarsest），8
+
+## Ablation study
+- training pyramid levels
+- evaluation pixel interval settings
 
