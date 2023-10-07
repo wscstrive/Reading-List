@@ -62,3 +62,5 @@
 - training pyramid levels
 - evaluation pixel interval settings
 
+# Thinking
+在没看代码的前提，没搞清楚迭代和金字塔层数的关系
