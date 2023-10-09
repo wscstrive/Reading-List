@@ -26,6 +26,8 @@
 ### Intra-view Adaptive Aggregation
 - 首先氛围三个不同尺度，最大尺度进行利用可变形卷积来丰富语义信息，并将另两个尺度进行采样到原分辨率上，最后合并在一起，最后feature channels=16+8+8
 
-$ \mathrm{f}'(\mathrm{p})=\sum_{k} w_k\cdot \mathrm{f}(\mathrm{p}+\mathrm{p}_k+\Delta \mathrm{p}_k)\cdot \Delta m_k  $
+$$
+\mathrm{f}'(\mathrm{p})=\sum_{k} w_k\cdot \mathrm{f}(\mathrm{p}+\mathrm{p}_k+\Delta \mathrm{p}_k)\cdot \Delta m_k  
+$$
 
 ### Inter-view Adapative Aggregation
