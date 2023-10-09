@@ -78,7 +78,7 @@ build a cost volume pyramid  in a coarse-to-fine manner
 
 ## Experiments
 
-- GT：下采样到160 $\times $ 128
+- GT：下采样到H,W=160,128
 - pyramid levels：2
 - depth hypothese：48（coarsest），8
 
