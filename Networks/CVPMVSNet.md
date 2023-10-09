@@ -10,7 +10,7 @@ build a cost volume pyramid  in a coarse-to-fine manner
 - 构建cost volume pyramid比Pointmvsnet在点云上更加高效； 同时时间快6倍
 
 ## Introduction
-> while traditional methods before deep learning era have ..., they still suffer from... 这段话的过渡方式学习到了
+> while traditional methods before deep learning era have ..., they still suffer from... 这段话的过渡方式学习到了; 介绍方向的baseline和相应发展; 引入本motivation相关的方法; 我们的网络....---good job!
 
 - 传统方法遭在朗伯表面好，但在光照变化、低纹理区域和反射会有不可靠的匹配结果
 - MVSNet的内存需要是cubic->(hand hign resolution)R-MVSNet更长的run-time->(efficient network)PointMVSNet随着迭代次数线性增长run-time
