@@ -78,9 +78,11 @@ build a cost volume pyramid  in a coarse-to-fine manner
 
 ## Experiments
 
-- GT：下采样到160✖$\times $128
+- GT：下采样到160 $\times $ 128
 - pyramid levels：2
 - depth hypothese：48（coarsest），8
+
+> 快的一部分原因来自输入的图像确实小，可能会丢失很多几何信息导致最终的完整结果并不好
 
 ## Ablation study
 - training pyramid levels
