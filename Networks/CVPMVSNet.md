@@ -59,7 +59,7 @@ build a cost volume pyramid  in a coarse-to-fine manner
 
 - 作者认为普通的采样操作会让采样点的距离过近而无法提供有效信息，作者计算了相邻0.5像素距离的depth sample interval
 - 首先将ref的3D点warp到src views，沿着极线找到相邻两个点反投影回3D空间，两个空间点的决定了当前深度细化的搜索范围
-- 粗阶段的深度图如常规一样 $D=d*P$，精细阶段是通过上一阶段的上采样深度图加上该阶段的期望值计算 $D=D↑ + r✖\times P$ （depth residual hypothesis: $r=m\times d$）
+- 粗阶段的深度图如常规一样 $D=d*P$，精细阶段是通过上一阶段的上采样深度图加上该阶段的期望值计算 $D=D↑ + r\times P$ （depth residual hypothesis: $r=m\times d$）
 
 ### Loss Function
 简单的L1损失函数
