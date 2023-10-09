@@ -58,12 +58,12 @@ $$
 
 ## Result
 
-- DTU
+*DTU*
 |Method|Views|Acc|Comp|Overall|
 |:-:|:-:|:-:|:-:|:-:|
 |AA-RMVSNet|7|0.376|0.339|0.357|
 
-- Tanks and Temples
-|Method|Views|Mean|
-|:-:|:-:|:-:|:-:|:-:|
-
+*Tanks and Temples*
+| Model | Train view | Mean↑ | Family↑ | Francis↑ | Horse↑ | LightHouse↑ | M60↑ | Panther↑ | Playground↑ | Train↑ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| AA-RMVSNet | 7 | 61.51 | 77.77 | 59.53 | 51.53 | 64.02 | 64.05 | 59.47 | 60.85 | 54.90 |
