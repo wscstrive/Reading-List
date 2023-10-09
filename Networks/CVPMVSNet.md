@@ -15,6 +15,7 @@ build a cost volume pyramid  in a coarse-to-fine manner
 - 传统方法遭在朗伯表面好，但在光照变化、低纹理区域和反射会有不可靠的匹配结果
 - MVSNet的内存需要是cubic->(hand hign resolution)R-MVSNet更长的run-time->(efficient network)PointMVSNet随着迭代次数线性增长run-time
 
+
 - CVPMVSNet在最粗阶段的采样深度下构建compact cost volume->(next level)当前阶段的深度估计的另句进行残差深度搜索，使用3DCNNs构建partial cost volume来正则化，速度是6x faster than SOTA network
 - 网络在predict&refine方面share similar insight with PointMVSNet，但有四点不同
   - 网络构建的cost volume是基于常规grid，在runtime比点云更快
