@@ -13,19 +13,15 @@ build a cost volume pyramid  in a coarse-to-fine manner
 > while traditional methods before deep learning era have ..., they still suffer from... 这段话的过渡方式学习到了; 介绍方向的baseline和相应发展; 引入本motivation相关的方法; 我们的网络....---good job!
 
 - 传统方法遭在朗伯表面好，但在光照变化、低纹理区域和反射会有不可靠的匹配结果
-- MVSNet的内存需要是cubic->(hand hign resolution)R-MVSNet更长的run-time->(efficient network)PointMVSNet随着迭代次数线性增长run-time
+- MVSNet的内存需要是cubic $\to$ (hand hign resolution)R-MVSNet更长的run-time->(efficient network)PointMVSNet随着迭代次数线性增长run-time
 
 
-- CVPMVSNet在最粗阶段的采样深度下构建compact cost volume->(next level)当前阶段的深度估计的另句进行残差深度搜索，使用3DCNNs构建partial cost volume来正则化，速度是6x faster than SOTA network
+- :sparkles: CVPMVSNet在最粗阶段的采样深度下构建compact cost volume->(next level)当前阶段的深度估计的另句进行残差深度搜索，使用3DCNNs构建partial cost volume来正则化，速度是6x faster than SOTA network
 - 网络在predict&refine方面share similar insight with PointMVSNet，但有四点不同
   - 网络构建的cost volume是基于常规grid，在runtime比点云更快
   - cost volume基于深度sample和图像分辨率的关系
   - 多尺度的3DCNN来覆盖更大的感受野，在残差深度估计的剧本上更加平滑
   - 我们的input和output可以保持小分辨率不变
-
-
-## :sparkles: Motivation
-- MVSNet的3D CNN内存消耗大，R-MVSNet的GRU时间成本高，Point-MVSNet的时间成本会随着迭代次数呈线性增长，作者提出了代价体金字塔，时间比Point-MVSNet快了6倍。
 
 ## Contribution
 - 构建更加compact、computational efficient的网络
