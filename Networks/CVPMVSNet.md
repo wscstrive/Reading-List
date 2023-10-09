@@ -50,7 +50,7 @@ build a cost volume pyramid  in a coarse-to-fine manner
 
 - 首先在最粗糙的阶段进行着，和MVSNet一样的homo_warp和基于variance-based cost volume construction操作
 - 1.对于不同尺度的金字塔连接，作者运用前一阶段的深度图上采样，并运功spatial cost volume生成一个深度残差值。作为认为相邻像素的深度位移是相关的，常规的3D卷积可以给深度残差估计提供更有用的信息
-- 2.得到上一深度图的双三次上采样（D↑），然后另深度残差深度间隔为（d=s/M），作者将不同深度平面上的点投影到了各个视图上，然后在采用基于varance-based cost得到residual depth map，最终得到的深度图 $D=D↑ + \delta D$ 不同迭代以refine depth map.
+- 2.得到上一深度图的双三次上采样（D↑），然后另深度残差深度间隔为（d=s/M），作者将不同深度平面上的点投影到了各个视图上，然后在采用基于varance-based cost得到residual depth map $\triangle D$，最终得到的深度图 $D=D↑ + \triangle D$ 不同迭代以refine depth map.
 > s为深度搜索范围，M是深度平面数量，值得注意，深度范围和间隔对推测深度图很重要
 
 <img width="320" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/b965bbd2-80b0-4a1f-a5e2-da5e9305e04c">
