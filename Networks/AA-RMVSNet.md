@@ -24,6 +24,9 @@
 <img width="690" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/e87b51ae-9c3e-4cf2-a5fb-195677a4c238">
 
 ### Intra-view Adaptive Aggregation
+
+<img width="323" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/a659d541-3942-4fc9-94ad-5ff408023198">
+
 - 首先氛围三个不同尺度，最大尺度进行利用可变形卷积来丰富语义信息，并将另两个尺度进行采样到原分辨率上，最后合并在一起，最后feature channels=16+8+8
 
 $$
@@ -31,3 +34,36 @@ $$
 $$
 
 ### Inter-view Adapative Aggregation
+
+<img width="319" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/4c8295b4-1ffc-4cff-9fd0-6a90eaccb6e2">
+
+- 作者两两特征体比对，然后进行得到不同代价体的权重信息，以考虑哪个视图值得被优先考虑，从而减少噪声印象，提高遮挡区域的可见性信息
+
+$$
+\mathrm{C}^{(d)} = \frac{1}{N-1} \sum_{i=1}^{N-1}[1+w(\mathrm{c}_i^{(d)})]\odot \mathrm{c}_i^{(d)}   
+$$
+
+- 权重+1位了避免过度平滑
+
+### Recurrent Cost Regularization
+将 <img width="93" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/1286f586-2954-46bb-b5a5-4b2faae152cc">进行卷积层切割成4个响亮，然后让LSTM处理，得到最后的v
+> 这一步骤说的很随意，没有讲清楚，如何切割，怎么划分？不看代码全是问号
+
+### Loss Function
+如RMVSNet一样一个交叉熵损失函数来考虑像素级概率分布问题
+
+## Experiments
+- H，W，D，N=160，120，192，7（dtu）
+- H，W，D，N=800，600，512，7（dtu）
+
+## Result
+
+- DTU
+|Method|Views|Acc|Comp|Overall|
+|:-:|:-:|:-:|:-:|:-:|
+|AA-RMVSNet|7|0.376|0.339|0.357|
+
+- Tanks and Temples
+|Method|Views|Mean|
+|:-:|:-:|:-:|:-:|:-:|
+
