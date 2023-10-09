@@ -17,7 +17,7 @@ build a cost volume pyramid  in a coarse-to-fine manner
 
 - CVPMVSNet在最粗阶段的采样深度下构建compact cost volume->(next level)当前阶段的深度估计的另句进行残差深度搜索，使用3DCNNs构建partial cost volume来正则化，速度是6x faster than SOTA network
 - 网络在predict&refine方面share similar insight with PointMVSNet，但有四点不同
-- - 网络构建的cost volume是基于常规grid，在runtime比点云更快
+  - 网络构建的cost volume是基于常规grid，在runtime比点云更快
   - cost volume基于深度sample和图像分辨率的关系
   - 多尺度的3DCNN来覆盖更大的感受野，在残差深度估计的剧本上更加平滑
   - 我们的input和output可以保持小分辨率不变
