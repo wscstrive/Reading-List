@@ -89,4 +89,4 @@ build a cost volume pyramid  in a coarse-to-fine manner
 - evaluation pixel interval settings
 
 # Thinking
-在没看代码的前提，没搞清楚迭代和金字塔层数的关系；训练的图片有点太小了
+在没看代码的前提，没搞清楚迭代和金字塔层数的关系；训练的图片有点太小了，应该比对下相同分辨率其他方法的结果
