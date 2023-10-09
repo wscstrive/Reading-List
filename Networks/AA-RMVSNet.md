@@ -67,3 +67,7 @@ $$
 | Model | Train view | Mean↑ | Family↑ | Francis↑ | Horse↑ | LightHouse↑ | M60↑ | Panther↑ | Playground↑ | Train↑ |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | AA-RMVSNet | 7 | 61.51 | 77.77 | 59.53 | 51.53 | 64.02 | 64.05 | 59.47 | 60.85 | 54.90 |
+
+## Thinking
+
+inter-view模块对后续在代价体构建方面起了很多的作用，收到后续工作的大力使用，从不同视图的重要性差异去减少噪声图像的影响
