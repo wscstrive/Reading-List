@@ -27,7 +27,7 @@
 -输入的图像分为三个阶段，以1/2作为下次下采样率，通道数分别为16，32，64
 
 ### GRU-based probability estiamtor
-- 在最粗糙尺度上，首先利用differentiable homography warping，深度范围采用逆深度范围（不规则的采样假设对大尺度场景更有效），再利用分组相似性度量来集成参考和源图像的相似性s(2-views)，我们再利用2DCNN空啊美聚合信息并将Gto1，使用softmax沿着深度方向生成概率体
+- 在最粗糙尺度上，首先利用differentiable homography warping，深度范围采用inverse深度范围（不规则的采样假设对大尺度场景更有效），再利用分组相似性度量来集成参考和源图像的相似性s(2-views)，我们再利用2DCNN空啊美聚合信息并将Gto1，使用softmax沿着深度方向生成概率体
 - 概率体可以为网络提供可视化信息（AA-RMVSNet中的inter-view module），但作者的权重就是简单的对概率体在深度方向上进行max，然后通过加权平均得到最终的相似性S(multi-views)
 
 $$
@@ -36,4 +36,4 @@ $$
 
 <img width="255" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/7a2058c5-bb80-482e-abad-7ef4c11c6a68">
 
-- 为了考虑空间联系，我们采用2D U-Net来处理 $S\in R^{W/8\times H/8\times D}$，最终得到的深度平面数降为1,再通过双线性插值和tanh的道出事的隐藏状态，即GRU的迭代从第二阶段开始，第一阶段更像是为第二阶段做参数准备
+- 为了考虑空间联系，采用2D U-Net来处理 $S\in R^{W/8\times H/8\times D}$，最终得到的深度平面数降为1,再通过双线性插值和tanh的道出事的隐藏状态，即GRU的迭代从第二阶段开始，第一阶段更像是为第二阶段做参数准备
