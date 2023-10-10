@@ -34,4 +34,6 @@ $$
 \mathrm{w}_i(\mathrm{p})=max(\mathrm{P}_i(\mathrm{p},j)\mid j=0,1,...,D_1-1)
 $$
 
+<img width="255" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/7a2058c5-bb80-482e-abad-7ef4c11c6a68">
+
 - 为了考虑空间联系，我们采用2D U-Net来处理 $S\in R^{W/8\times H/8\times D}$，最终得到的深度平面数降为1,再通过双线性插值和tanh的道出事的隐藏状态，即GRU的迭代从第二阶段开始，第一阶段更像是为第二阶段做参数准备
