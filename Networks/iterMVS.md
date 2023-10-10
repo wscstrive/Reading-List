@@ -31,7 +31,7 @@
 - 概率体可以为网络提供可视化信息（AA-RMVSNet中的inter-view module），但作者的权重就是简单的对概率体在深度方向上进行max，然后通过加权平均得到最终的相似性S(multi-views)
 
 $$
-\mathrm{w}_i(\mathrm{p})=max\left\{\mathrm{P}_i(\mathrm{p},j)\mid j=0,1,...,D_1-1\right\} 
+\mathrm{w}_i(\mathrm{p})=max(\mathrm{P}_i(\mathrm{p},j)\mid j=0,1,...,D_1-1)
 $$
 
 - 为了考虑空间联系，我们采用2D U-Net来处理 $S\in R^{W/8\times H/8\times D}$，最终得到的深度平面数降为1,再通过双线性插值和tanh的道出事的隐藏状态，即GRU的迭代从第二阶段开始，第一阶段更像是为第二阶段做参数准备
