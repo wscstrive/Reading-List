@@ -9,7 +9,7 @@
 ## Introduction
 
 - MVS的本质是沿着极线的一对多的匹配任务，MVS的baseline存在两个问题：（1）缺少全局特征；（2）特征提取只是简单的提取源视图特征，潜在的图像间的联系没有考虑在内
-- 最近的transformer在特征匹配任务有着优异的成果，作者遵循LoFR采用了inter和intra-attention来进行分别的特征提取（其实基本没有变化）
+- 最近的transformer在特征匹配任务有着优异的成果，作者遵循LoFTR采用了inter和intra-attention来进行分别的特征提取（其实基本没有变化）
 - ARF和pari-wise feature correlation可以给FMT更好的过渡，并取得了完整度很好的效果
 
 ## Related work
@@ -39,4 +39,16 @@ $$
 ### Loss function
 - 由于作者考虑深度平面有很多，但真实参数只有一个，因此减少错误平面的监督，重点关注在真实参数上，作者做了一点改变，作者用了最近火热的focal loss
 
+$$
+\mathcal{L}=\sum_{\mathrm{p}\in \Psi}-(1-P^{(\tilde{d})}(\mathrm{p}))^{\gamma}\mathrm{log} (P^{(\tilde{d})}(\mathrm{p}))
+$$
+- 对于训练中 $\tilde{d}$ = 0, 评估中 $\tilde{d}$ = 2
 
+## Experiments
+- 8*2080ti, 结果不好没道理的
+
+## Limitations
+- attention限制了网络在很多方面的限制，计算成本和时间成本也比较高
+
+## Thinking
+transofmer限制了网络拓展到更精细阶段，事实上比起在粗糙阶段的transformer应用，精细阶段更加重要，粗糙阶段的特征增强会通过阶段的递进逐渐失去增强的优势。
