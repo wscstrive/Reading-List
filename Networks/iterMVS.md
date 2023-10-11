@@ -61,6 +61,7 @@ $$
 <img width="160" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/1656378d-f238-4d09-ab5a-90d1568a6419">
 
 <img width="301" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/8225af2d-4845-47e1-afe4-669d89403f22">
+
 > 感觉有点像加权平均的感觉
 
 #### Confidence estimation
