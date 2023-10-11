@@ -50,5 +50,19 @@ $$
 ## Limitations
 - attention限制了网络在很多方面的限制，计算成本和时间成本也比较高
 
+*DTU*  
+| Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
+| :-: | :-: | :-: | :-: | :-: |
+| TransMVSNet | 5 | 0.321 | 0.289 | 0.305 |
+
+*Tanks and Temples*  
+| Model | Train view | Mean↑ | Family↑ | Francis↑ | Horse↑ | LightHouse↑ | M60↑ | Panther↑ | Playground↑ | Train↑ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| TransMVSNet | 5 | 65.52 | 80.92 | 65.83 | 56.94 | 62.54 | 63.06 | 60.00 | 60.20 | 58.67 |
+
+| Model | Train view | Mean↑ | Audiorium↑ | Ballroom↑ | Courtroom↑ | Museum↑ | Palace↑ | Temple↑ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| TransMVSNet | 5 | 37.00 | 24.84 | 44.59 | 34.77 | 46.49 | 34.69 | 36.92 |
+
 ## Thinking
 transofmer限制了网络拓展到更精细阶段，事实上比起在粗糙阶段的transformer应用，精细阶段更加重要，粗糙阶段的特征增强会通过阶段的递进逐渐失去增强的优势。
