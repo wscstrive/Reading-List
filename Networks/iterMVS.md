@@ -37,3 +37,11 @@ $$
 <img width="255" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/7a2058c5-bb80-482e-abad-7ef4c11c6a68">
 
 - 为了考虑空间联系，采用2D U-Net来处理 $S\in R^{W/8\times H/8\times D}$，最终得到的深度平面数降为1,再通过双线性插值和tanh的道出事的隐藏状态，即GRU的迭代从第二阶段开始，第一阶段更像是为第二阶段做参数准备
+
+### Iterative update
+
+- 在后续阶段，我们的逆深度范围计算：
+
+$$
+[\frac{\frac{1}{\mathrm{D}_{k-1}(\mathrm{p})}-\frac{1}{d_{max}}}{\frac{1}{d_{min}}-\frac{1}{d_{max}}}-R_l,\frac{\frac{1}{\mathrm{D}_{k-1}(\mathrm{p})}-\frac{1}{d_{max}}}{\frac{1}{d_{min}}-\frac{1}{d_{max}}}+R_l]
+$$
