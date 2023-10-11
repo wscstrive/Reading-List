@@ -15,6 +15,15 @@
 
 <img width="672" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/e6e85853-4cf9-4895-ad3c-e62422cf2d03">
 
+### Unified depth representation
+
+### Unified focal loss
+
+### UniMVSNet
+
+## Experiments
+
+## Ablation studies
 
 *DTU*  
 | Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
@@ -29,3 +38,6 @@
 | Model | Train view | Mean↑ | Audiorium↑ | Ballroom↑ | Courtroom↑ | Museum↑ | Palace↑ | Temple↑ |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | TransMVSNet | 5 | 38.96 | 28.33 | 44.36 | 39.74 | 52.89 | 33.80 | 34.63 |
+
+## Thinking
+为数不多纯公式推导的论文，算是我比较喜欢的论文形式，而且加的东西确实有道理，而且模块不影响内存占用，是个很不错很值得学习的论文，但是感觉不好改进
