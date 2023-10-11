@@ -15,3 +15,17 @@
 
 <img width="672" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/e6e85853-4cf9-4895-ad3c-e62422cf2d03">
 
+
+*DTU*  
+| Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
+| :-: | :-: | :-: | :-: | :-: |
+| UniMVSNet | 5 | 0.352 | 0.278 | 0.315 |
+
+*Tanks and Temples*  
+| Model | Train view | Mean↑ | Family↑ | Francis↑ | Horse↑ | LightHouse↑ | M60↑ | Panther↑ | Playground↑ | Train↑ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| TransMVSNet | 5 | 64.36 | 81.20 | 66.43 | 53.11 | 63.46 | 66.09 | 64.84 | 62.23 | 57.53 |
+
+| Model | Train view | Mean↑ | Audiorium↑ | Ballroom↑ | Courtroom↑ | Museum↑ | Palace↑ | Temple↑ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| TransMVSNet | 5 | 38.96 | 28.33 | 44.36 | 39.74 | 52.89 | 33.80 | 34.63 |
