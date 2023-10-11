@@ -36,12 +36,17 @@ $$
 
 <img width="255" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/7a2058c5-bb80-482e-abad-7ef4c11c6a68">
 
-- 为了考虑空间联系，采用2D U-Net来处理 $S\in R^{W/8\times H/8\times D}$，最终得到的深度平面数降为1,再通过双线性插值和tanh的道出事的隐藏状态，即GRU的迭代从第二阶段开始，第一阶段更像是为第二阶段做参数准备
+- 为了考虑空间联系，采用2D U-Net来处理 $S\in R^{W/8\times H/8\times D}$，最终得到的深度平面数降为1,再通过双线性插值和tanh的道出事的隐藏状态$h_{k-1}$，即GRU的迭代从第二阶段开始，第一阶段更像是为第二阶段做参数准备
 
 ### Iterative update
 
-- 在后续阶段，我们的逆深度范围计算：
+> 用了很多的操作，对一些参数的维度介绍少了一些
 
-$$
-[\frac{\frac{1}{\mathrm{D}_{k-1}(\mathrm{p})}-\frac{1}{d_{max}}}{\frac{1}{d_{min}}-\frac{1}{d_{max}}}-R_l,\frac{\frac{1}{\mathrm{D}_{k-1}(\mathrm{p})}-\frac{1}{d_{max}}}{\frac{1}{d_{min}}-\frac{1}{d_{max}}}+R_l]
-$$
+- 在后续阶段，我们的逆深度范围计算,并确保 $R_{l-1} < R_{l}$ 以在跟高分辨率上有着更多的深度区间信息去采集
+
+<img width="762" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/e7c6e704-3d4d-476b-8f40-7684dd15dee2">
+
+> $R_l$是每个像素在逆深度范围内的间隔（超参数）
+
+- pixel-wise view weights-> $2\times $ upsampled(整合匹配相似度)-> level-wise 2D U-Net(聚合邻边信息并减少通道到1)
+- mathcing similarities-> concatenate 3 levels $\in R_{W/4\times H/4\times (N_1+N_2+N_3)}$-> concatenate S和$D_{k-1]$->x_k(GRU的输入和$h_{k-1}$)
