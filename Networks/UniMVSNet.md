@@ -16,14 +16,35 @@
 <img width="672" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/e6e85853-4cf9-4895-ad3c-e62422cf2d03">
 
 ### Unified depth representation
+- regression方法容易过拟合；classification方法无法预测准备的深度值；作者结合了两者的优点，首先用分类来分类最有的深度估计平面，然后回归来接近（偏差值）
+- - Unity generate: generate the gt unity from gt depth, 首先给定gt深度值和深度估计值，将索引限定在图像内部和深度范围内部，当索引的平面到达真实值附近的时候并在他下一个索引之前（肯定是比他大的，因为索引是从小到大取的），那么我们就计算这个U的概率值（贴近这个平面的概率，离得越近，概率越大）
+
+<img width="325" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/faf72884-ae5e-4a36-a8ca-814b25ee8cff">
+
+- - Unity regression: regress the depth from the estimated unity,首先给定estimated unity U（前面Unity generate测的0和值）和深度估计值，我们首先找到有值的索引，然后在判断这个索引所在的深度值，如果索引在范围内部，那么我们就确定好他的间隔，offset的计算就是吧上述介绍的U的远近概率反过来，变成估计值占整个间隔的比例（概率越小，证明离得越近），然后✖️间隔值得到他的真值，最后的深度估计就是深度平面值加上这个索引值
+
+<img width="336" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/7c921f89-c10b-4a9b-9718-deb81a8a7c28">
+
+> unity generate找到每个像素点所深度估计值离哪个深度平面最近，并判断他的概率（贴近这个平面的概率）；unity regreesion是定义到这个索引平面和概率值，并反转得到这个（1-概率值）* 间隔所得的偏置
 
 ### Unified focal loss
 
+$$
+\mathrm{FL}(u,q)=
+\left\{\begin{matrix}
+-\alpha (1-u)^\gamma \mathrm{log}(u)\;\;\;\;\;\;\;\;,q=1\\
+-(1-\alpha) u^\gamma \mathrm{log}(1-u)\;\;,other
+\end{matrix}\right.
+$$
 ### UniMVSNet
 
 ## Experiments
 
 ## Ablation studies
+
+- Benefits of unification
+- Benefits of UFL
+- Regression finetuning and less data
 
 *DTU*  
 | Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
