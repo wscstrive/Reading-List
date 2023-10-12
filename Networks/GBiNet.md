@@ -47,9 +47,26 @@ $$
 
 
 ## Experiments
+- 以往的方法首先1200,1600->1024,1280->(downscale)512,640,而作者选择通过随意crop，这反而提高了效果
 
 ## Ablation work
 - effect of different search strategies
 - effect of stage number
 - effect of ETB number
 - effect of memory-efficient training
+
+*DTU*   *random cropping
+| Model | view number | Acc.(mm)↓ | Comp.(mm)↓ | Overall(mm)↓ |
+| :-: | :-: | :-: | :-: | :-: |
+| GBiNet | 5 | 0.327 | 0.268 | 0.298 |
+| GBiNet* | 5 | 0.315 | 0.262 | 0.289 |
+
+
+*Tanks and Temples*  
+| Model | Train view | Mean↑ | Family↑ | Francis↑ | Horse↑ | LightHouse↑ | M60↑ | Panther↑ | Playground↑ | Train↑ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| GBiNet | 7 | 61.42 | 79.77 | 67.69 | 51.81 |61.25 |60.37 |55.87 |60.67 |53.89|
+
+| Model | Train view | Mean↑ | Audiorium↑ | Ballroom↑ | Courtroom↑ | Museum↑ | Palace↑ | Temple↑ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| GBiNet | 7 | 37.32 | 29.77 | 42.12 | 36.30 | 47.69 | 31.11 | 36.93 |
