@@ -28,18 +28,33 @@
 > unity generate找到每个像素点所深度估计值离哪个深度平面最近，并判断他的概率（贴近这个平面的概率）；unity regreesion是定义到这个索引平面和概率值，并反转得到这个（1-概率值）* 间隔所得的偏置
 
 ### Unified focal loss
+- 作者沿用了focal loss，认为多层深度平面，但最终深度值只有一个，我们应该把注意力放在这一个上面，而减少其他平面层的影响和注意力，u是estimated unity，q是lab
 
-$$
-\mathrm{FL}(u,q)=
-\left\{\begin{matrix}
--\alpha (1-u)^\gamma \mathrm{log}(u)\;\;\;\;\;\;\;\;,q=1\\
--(1-\alpha) u^\gamma \mathrm{log}(1-u)\;\;,other
-\end{matrix}\right.
-$$
+<img width="486" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/c0f73081-273b-4ad7-a1f4-82f75649d8af">
+
+- 由于q是lab值，并不适合我们的回归值，所以作者进一步改进了这个公式把它更贴合于回归的输入，作者增加了二元交叉熵，以满足回归值输入依然公式成立，将两分类问题转化为回归的公式
+  
+<img width="504" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/33c9d9aa-2dd1-49aa-90a9-62aba760c91c">
+
+<img width="1200" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/4a3f63e6-2a6c-47bd-b9be-4b1dc773fc2a">
+
+- 但是作者又发现了新的，这个公式忽略gt和深度估计值之间的关联，即绝对值内部的正负会直接影响到结果，作者将绝对的误差转为绝对的误差
+
+<img width="528" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/beefd964-dab3-40a5-bfa8-c70ab5919fbd">
+
+- 此外，注意力这个分数的取值范围会趋向于正无穷，因此加上个sigmoid函数来规定限制
+
+<img width="526" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/8634eafd-9fdb-4255-ae85-2e7bc5c71672">
+
 ### UniMVSNet
 
-## Experiments
+- 作者对每一阶段都进行了计算，并给了超参数，最后得出最后的损失函数（也算是本文唯一的创新，简单但有效）
 
+## Experiments
+> 超参数有点多
+- $\alpha^+$ = 1,$\alpha^-$ = 0.75,0.5,0.25
+- $S_5^+ \in [1,3)$, $S_5^- \in [0,1)$, $\gamma$=2,1
+  
 ## Ablation studies
 
 - Benefits of unification
@@ -61,4 +76,4 @@ $$
 | TransMVSNet | 5 | 38.96 | 28.33 | 44.36 | 39.74 | 52.89 | 33.80 | 34.63 |
 
 ## Thinking
-为数不多纯公式推导的论文，算是我比较喜欢的论文形式，而且加的东西确实有道理，而且模块不影响内存占用，是个很不错很值得学习的论文，但是感觉不好改进
+为数不多纯公式推导的论文，算是我比较喜欢的论文形式，而且加的东西确实有道理，而且模块不影响内存占用，是个很不错很值得学习的论文，但是感觉不好改进,且超参数设置的很多
