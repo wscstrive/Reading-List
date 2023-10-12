@@ -52,7 +52,7 @@
 
 ## Experiments
 > 超参数有点多
-- $\alpha^+$ = 1,$\alpha^-$ = 0.75,0.5,0.25
+- $\alpha^+$ = 1, $\alpha^-$ = 0.75,0.5,0.25
 - $S_5^+ \in [1,3)$, $S_5^- \in [0,1)$, $\gamma$=2,1
   
 ## Ablation studies
