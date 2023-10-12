@@ -70,3 +70,6 @@ $$
 | Model | Train view | Mean↑ | Audiorium↑ | Ballroom↑ | Courtroom↑ | Museum↑ | Palace↑ | Temple↑ |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | GBiNet | 7 | 37.32 | 29.77 | 42.12 | 36.30 | 47.69 | 31.11 | 36.93 |
+
+## Thinking
+GBi的后处理很好的解决了BiNet留下的问题，但random crop像是一个trick
