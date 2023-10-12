@@ -5,7 +5,7 @@
 - 首先将MVS设计为2分类搜索问题即是对概率体切割成2bin，并在切割的正bin（包含正确的深度值的bin）的两边添加一个额外的容忍错误区域，这样我们的网络设置在一个更小范围的深度估计内
  
 ## Introduction
-- 前面的铺垫有点长
+> 前面的铺垫有点长
 - 将MVS设计为一个二分类搜索问题，bin的中间值来表示这段区间，但无法保证选择的bin中gt也在这块里面，错误的判断会在后续进行叠加；1.给这个bin增加错误容忍区域，适当加强这个区间，2.如果出现错误的判断，网络会中止这个像素的前向传播，使他不会影响后续的训练，3.网络在每个阶段都更新参数，而不是所有阶段训练完才更新，更加高效
 
 ## Related work
@@ -38,12 +38,12 @@ $$
 ### Generalized binary search for MVS
 
 - 为了解决误差堆积和训练问题，作者设计了三个机制来优化这个BiNet，
-- Error tolerance bins：在选择的bin两边分别拓展了一部分长度（ETB），作者试着在一边添加ETB并发现依然去了
-- 
+- 1.Error tolerance bins：在选择的bin两边分别拓展了一部分长度（ETB），作者在补充材料中试着在一边添加ETB发现效果也很好（补充材料没看到）
+- 2.Gradient-maksed optimization：解决误差堆积问题，作者通过gt设计了一个gt_mask图，然后去和选择的bin进行比较，gt_mask在bin内部，证明这个像素是valid的，网络只会去更新valid的像素，而不会花费时间在invalid pixel上
 ### Loss function
 - cross-entropy
 
-- memory-efficient training：过去的方法通常会平均所有阶段的损失总值，需要消耗巨大的内存空间，作者每训练完一个阶段就进行损失函数的计算，节省了内存，更加高效
+- 3.Memory-efficient training：过去的方法通常会平均所有阶段的损失总值，需要消耗巨大的内存空间，作者每训练完一个阶段就进行损失函数的计算，节省了内存，更加高效
 
 
 ## Experiments
