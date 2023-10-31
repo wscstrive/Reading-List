@@ -19,9 +19,10 @@
 - learning-based mvs
 - improvements for mvs in post-pyramid era
 
-<img width="1027" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/0b50c5b5-2ecd-48e1-99d7-ae6742647684">
 
 ## Methodology
+
+<img width="1027" alt="image" src="https://github.com/elleryw0518/MVS/assets/101634608/0b50c5b5-2ecd-48e1-99d7-ae6742647684">
 
 ### Geometry Awareness for Robust Cost Matching
 - 作者对cascade的结构进行了调整，使得每个阶段不共享same constituents；不使用繁重的外部依赖，而是利用网络本身有所有的信息，例如粗阶段的depth estimation和probability volume
