@@ -30,3 +30,7 @@
 $$
 Branch(z)=\hat{\mathcal{B}}([D_{\uparrow }^{\ell},\mathcal{B}([I_{0}^{\ell+1},D_{\uparrow }^{\ell}])]) 
 $$
+
+$$
+F_{0}^{\ell+1}(z)=Fusion(\bar{F}_0^{\ell+1}(z)\oplus Branch(z)) 
+$$
