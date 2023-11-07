@@ -37,10 +37,10 @@ F_{0}^{\ell+1}(z)=Fusion(\bar{F}_0^{\ell+1}(z)\oplus Branch(z))
 $$
 
 - Probablility volume geometry embedding. 将3D'position map'嵌入到cost regularization network中
-作者减少了3DUNet的卷积核改为了（kkk->1kk）,提高了效率但缺乏深度维度的信息嵌入（其实效果也是很不错，并没有很大的改动）；为了增强深度信息，作者在对probability的 volume的每个切片进行了depth-aware positional encoding，这样就可以从各个层面去了解深度信息，而不会错乱.confience+full-scene function
+作者减少了3D UNet的卷积核改为了（kkk->1kk）,提高了效率但缺乏深度维度的信息嵌入（其实效果也是很不错，并没有很大的改动）；为了增强深度信息，作者在对probability的 volume的每个切片进行了depth-aware positional encoding，这样就可以从各个层面去了解深度信息，而不会错乱.confience+full-scene function
 
 ### Geometry Enhancement in Frequency Domain
-- 上面的方法以及很好的增强了几何感知，但面对infinite sky和边界处，reprojection out of bound而导致增加计算负担。因此作者首先运用了RGB-guided depth refinement，但这种方法会导致深度图过度拟合到数据集中的图像，而MVS的目标是match; 运用DFT将深度图转换为2D离散信号并再转为频域问题。低通滤波器可以很好的缓解高频信息（去掉复杂和无法理解的信息，其实就是做了一个mask-like的东西）；随后作者提出了一个curriculum learning，没太理解，提出的比较突兀
+- 上面的方法以及很好的增强了几何感知，但面对infinite sky和边界处，reprojection out of bound而导致增加计算负担。因此作者首先运用了RGB-guided depth refinement，但这种方法会导致深度图-过度拟合-到数据集中的图像，而MVS的目标是match; 运用DFT将深度图转换为2D离散信号并再转为频域问题。低通滤波器可以很好的缓解高频信息（去掉复杂和无法理解的信息，其实就是做了一个mask-like的东西）；随后作者提出了一个curriculum learning，没太理解，提出的比较突兀（应该需要结合代码去理解）
 
 $$
 \mathcal{F}^{\ell}(u,v)=\sum_{x=0}^{W-1}\sum_{y=0}^{H-1}D^\ell(x,y)e^{-j2\pi(\frac{ux}{W}+\frac{vy}{H})}   
@@ -50,3 +50,38 @@ $$
 \tilde{D}^\ell(x,y) =\frac{1}{WH}\sum_{u=0}^{W-1}\sum_{v=0}^{H-1}\tilde{F}^\ell(u,v)e^{j2\pi(\frac{ux}{W}+\frac{vy}{H})}   
 $$
 
+### Mixed-Gaussian Depth Distribution Model
+- 以往的方法只考虑像素级的深度特征，而没有建模全场景的深度分布（对几何感知很重要）；作者将场景主要分为三类（centered object&orbiting camera; surrounding object&self-rotating camera; aerial photograpth）
+
+$$
+p(d|\Omega)=\sum_{i=1}^{K}\omega_{i}\Phi(d|\theta_{i})
+$$
+
+$$
+\Phi(d|\theta_{i})=\frac{1}{\sqrt{2\pi}\sigma _{i}}exp(-\frac{(d-\mu_{i})^2}{2\sigma_{i}^2} ) 
+$$
+
+$$
+0\le \omega _{i} \le 1 \;\;and\;\;\sum_{i=1}^{K}\omega_i=1 
+$$
+
+
+### Loss Functions
+
+- Pixel-wise classification(regression mode会在早期进入局部循环)
+
+$$
+Loss_{pw}=\sum_{z\in\Psi}(-P_{GT}(z)log[P(z)]) 
+$$
+
+- Kullback-Leibler Divergence metric
+
+$$
+Loss_{dds}=\sum_{m=0,z\in\Upsilon }^{M'}\tilde{p}(z)(log\;\tilde{p}(z)-log\;\mathcal{N}_{GT}(z))
+$$
+
+$$
+\Upsilon=\Psi \cap \bigcup_{i=1}^{K}((\mu _i-3\sigma _i,\mu _i+3\sigma _i)) 
+$$
+
+- - $$Loss=\sum_{\ell =0}^{L}(\lambda_1^\ell Loss_{pw}+\lambda_2^\ell Loss_{dds})$$
