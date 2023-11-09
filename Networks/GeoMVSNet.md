@@ -62,7 +62,7 @@ $$
 $$
 
 $$
-0\le \omega_{i} \le 1 \& sum_{i=1}^{K}\omega_i=1 
+0\le \omega_{i} \le 1, sum_{i=1}^{K}\omega_i=1 
 $$
 
 
