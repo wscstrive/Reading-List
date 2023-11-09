@@ -58,11 +58,11 @@ p(d|\Omega)=\sum_{i=1}^{K}\omega_{i}\Phi(d|\theta_{i})
 $$
 
 $$
-\Phi(d|\theta_{i})=\frac{1}{\sqrt{2\pi}\sigma _{i}}exp(-\frac{(d-\mu_{i})^2}{2\sigma_{i}^2} ) 
+\Phi(d|\theta_{i})=\frac{1}{\sqrt{2\pi}\sigma_{i}}exp(-\frac{(d-\mu_{i})^2}{2\sigma_{i}^2} ) 
 $$
 
 $$
-0\le \omega _{i} \le 1 \;\;and\;\;\sum_{i=1}^{K}\omega_i=1 
+0\le omega_{i} \le 1 \;\;and\;\;\sum_{i=1}^{K}\omega_i=1 
 $$
 
 
