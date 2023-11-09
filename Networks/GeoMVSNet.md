@@ -51,7 +51,7 @@ $$
 $$
 
 ### Mixed-Gaussian Depth Distribution Model
-- 以往的方法只考虑像素级的深度特征，而没有建模全场景的深度分布（对几何感知很重要）；作者将场景主要分为三类（centered object&orbiting camera; surrounding object&self-rotating camera; aerial photograpth，随后作者采用Gaussian Mixtured Models去结合不同分布的高斯分布。（但最后的结果中作者选择的场景K=1，其实用的就是普通的高斯分布）
+- 以往的方法只考虑像素级的深度特征，而没有建模全场景的深度分布（对几何感知很重要）；作者将场景主要分为三类（centered object&orbiting camera; surrounding object&self-rotating camera; aerial photograpth，随后作者采用Gaussian Mixtured Models去结合不同分布的高斯分布,其中选择的场景的分布为$(\mu_{i}-3\sigma_{i}, \mu_{i}+3\sigma_{i})$。（但最后的结果中作者选择的场景K=1，其实用的就是普通的高斯分布）
 
 $$
 p(d|\Omega)=\sum_{i=1}^{K}\omega_{i}\Phi(d|\theta_{i})
