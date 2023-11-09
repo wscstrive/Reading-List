@@ -74,7 +74,7 @@ $$
 Loss_{pw}=\sum_{z\in\Psi}(-P_{GT}(z)log[P(z)]) 
 $$
 
-- Kullback-Leibler Divergence metric
+- Kullback-Leibler Divergence metric（KL散度，用来评判两个概率分布的相似度）
 
 $$
 Loss_{dds}=\sum_{m=0,z\in\Upsilon }^{M'}\tilde{p}(z)(log\;\tilde{p}(z)-log\;\mathcal{N}_{GT}(z))
