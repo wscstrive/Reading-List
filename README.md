@@ -5,8 +5,8 @@ Here is my list of paper readings along with their links and some of my thoughts
 
 - 3D Vision
 
-- - Multi-View Stereo
-- - Neural Radiation Field
-- - 3D Gaussian splatting
+  - Multi-View Stereo
+  - Neural Radiation Field
+  - 3D Gaussian splatting
 
 ## Interesting Work
