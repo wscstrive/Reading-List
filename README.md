@@ -7,7 +7,7 @@ Here is my list of paper readings along with their links and some of my thoughts
   - <details open>
     <summary>Multi-View Stereo/summary>
     - sd
-    </summary>
+    </details>
   - Neural Radiation Field
   - 3D Gaussian splatting
 
