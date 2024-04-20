@@ -4,13 +4,13 @@
 
 ## 2024
 
-- GoMVS: Geometrically Consistent Cost Aggregation for Multi-View Stereo
+- CVPR 2024, GoMVS: Geometrically Consistent Cost Aggregation for Multi-View Stereo, [paper](), [code](), [thought]()
 
-- MVSFormer++: Revealing the Devil in Transformer's Details for Multi-View Stereo
+- MVSFormer++: Revealing the Devil in Transformer's Details for Multi-View Stereo, [paper](), [code](), [thought]()
 
-- HAMMER: Learning Entropy Maps to Create Accurate 3D Models in Multi-View Stereo
+- HAMMER: Learning Entropy Maps to Create Accurate 3D Models in Multi-View Stereo, [paper](), [code](), [thought]()
 
-- GC-MVSNet: Multi-View, Multi-Scale, Geometrically-Consistent Multi-View Stereo
+- GC-MVSNet: Multi-View, Multi-Scale, Geometrically-Consistent Multi-View Stereo, [paper](), [code](), [thought]()
 
 
 ## 2023
