@@ -1,6 +1,6 @@
-# A paper list of Sicheng Wang
+# A reading list of Sicheng Wang
 
-Here is my list of paper readings along with their links and some of my thoughts.
+Here is my list of reading along with their links and some of my thoughts.
 > Inspired by [aweosme-NeRF](https://github.com/awesome-NeRF/awesome-NeRF) and [Paper-List](https://github.com/YanjieZe/Paper-List?tab=readme-ov-file)
 
 ## Papers
