@@ -8,4 +8,7 @@ Here is my list of paper readings along with their links and some of my thoughts
   - Neural Radiation Field
   - 3D Gaussian splatting
 
+- Math
+  - 线性代数
+  
 ## Interesting Work
