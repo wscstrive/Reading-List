@@ -6,7 +6,7 @@ For papers without open-source code, I haven't shared them, but that doesn't mea
 
 - [GoMVS: Geometrically Consistent Cost Aggregation for Multi-View Stereo](https://arxiv.org/pdf/2404.07992.pdf), CVPR 2024,  [[code]](https://github.com/Wuuu3511/GoMVS), [[thought]]()
 
--MVSFormer++: Revealing the Devil in Transformer's Details for Multi-View Stereo, ICLR 2024,  [[paper]](), [[code]](), [[thought]]()
+- MVSFormer++: Revealing the Devil in Transformer's Details for Multi-View Stereo, ICLR 2024,  [[paper]](), [[code]](), [[thought]]()
   
 - WACV 2024, HAMMER: Learning Entropy Maps to Create Accurate 3D Models in Multi-View Stereo, [[paper]](), [[code]](), [[thought]]()
   
