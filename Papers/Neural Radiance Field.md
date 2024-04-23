@@ -1,2 +1,0 @@
-
-Neural Radiance Field.md
