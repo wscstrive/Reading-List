@@ -5,7 +5,7 @@ Here is my list of reading along with their links and some of my thoughts.
 
 ## Papers
 - 3D Vision
-  - Multi-View Stereo
+  - [Multi-View Stereo](Papers/Multi-View_Stereo.md)
   - Neural Radiation Field
   - 3D Gaussian splatting
 
