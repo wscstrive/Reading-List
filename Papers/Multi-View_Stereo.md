@@ -4,7 +4,7 @@ For papers without open-source code, I haven't shared them, but that doesn't mea
 > | [2024](#2024) | [2023](#2023) | [2022](#2022) | [2021](#2021) | [2020](#2020) | [2019](#2019) | [2018](#2018) |
 ## 2024
 
-- GoMVS: Geometrically Consistent Cost Aggregation for Multi-View Stereo, CVPR 2024, [[paper]](https://arxiv.org/pdf/2404.07992.pdf), [[code]](https://github.com/Wuuu3511/GoMVS), [[thought]]()
+- __GoMVS: Geometrically Consistent Cost Aggregation for Multi-View Stereo__, CVPR 2024, [[paper]](https://arxiv.org/pdf/2404.07992.pdf), [[code]](https://github.com/Wuuu3511/GoMVS), [[thought]]()
 
 - MVSFormer++: Revealing the Devil in Transformer's Details for Multi-View Stereo, ICLR 2024,  [[paper]](), [[code]](), [[thought]]()
   
