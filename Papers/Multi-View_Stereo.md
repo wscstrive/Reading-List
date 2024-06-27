@@ -2,7 +2,7 @@
 For papers without open-source code, I haven't shared them, but that doesn't mean I haven't read them. It's just that I have doubts about the feasibility of these papers.
 
 > | [2024](#2024) | [2023](#2023) | [2022](#2022) | [2021](#2021) | [2020](#2020) | [2019](#2019) | [2018](#2018) |
-#### 2024
+## 2024
 
 - CVPR 2024 - [GoMVS: Geometrically Consistent Cost Aggregation for Multi-View Stereo](https://arxiv.org/pdf/2404.07992.pdf) - [[code]](https://github.com/Wuuu3511/GoMVS) - [[thought]]()
 
@@ -12,7 +12,7 @@ For papers without open-source code, I haven't shared them, but that doesn't mea
   
 - WACV 2024 - [GC-MVSNet: Multi-View, Multi-Scale, Geometrically-Consistent Multi-View Stereo](https://github.com/vkvats/GC-MVSNet) - [[code]](https://github.com/vkvats/GC-MVSNet) - [[thought]]()
 
-#### 2023
+## 2023
 
 - ICCV 2023 - [When Epipolar Constraint Meets Non-Local Operators in Multi-View Stereo](https://arxiv.org/pdf/2309.17218.pdf) - [[code]](https://github.com/TQTQliu/ET-MVSNet) - [[thought]]()
 
