@@ -7,7 +7,7 @@ Here is my list of reading along with their links and some of my thoughts.
 
 - 3D Vision
   - [Multi-View Stereo (MVS)](Papers/Multi-View_Stereo.md)
-  - [Neural Radiation Field (NeRF)]()
+  - [Neural Radiation Field (NeRF)](Papers/NeRF.md)
   - [3D Gaussian Splatting (3D GS)]()
 
 ## Books
