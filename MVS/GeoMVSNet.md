@@ -1,6 +1,6 @@
 # GeoMVSNet: Learning Multi-View Stereo with Geometry Perception (CVPR 2022)
 
-> 从全场景方面考虑深度重建。很舒服的文章结构
+> 从全场景方面考虑深度重建。很舒服的文章结构。其中对图像中不同频率的优化部分工作做的很好
 
 ## Abstract
 - 以前的方面忽略了几何信息，导致脆弱的cost matching and sub-optimal results
