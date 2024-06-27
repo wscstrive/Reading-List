@@ -1,5 +1,5 @@
 # Generalized Binary Search Network for Highly-Efficient Multi-View Stereo
-
+> idea和motivation很不错
 ## Abstract
 - coarse-to-fine 并没有很好的解决内存问题，作者设计更高效的网络，将MVS视为1D search problem
 - 首先将MVS设计为2分类搜索问题即是对概率体切割成2bin，并在切割的正bin（包含正确的深度值的bin）的两边添加一个额外的容忍错误区域，这样我们的网络设置在一个更小范围的深度估计内
