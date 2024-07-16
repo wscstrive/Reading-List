@@ -9,6 +9,7 @@ Here is my list of reading along with their links and some of my thoughts.
   - [Multi-View Stereo (MVS)](Papers/Multi-View_Stereo.md)
   - [Neural Radiation Field (NeRF)](Papers/Neural_Radiance_Field.md)
   - [3D Gaussian Splatting (3D GS)]()
+- Image Generation
   - [Image Colorization]()
 
 ## Books
