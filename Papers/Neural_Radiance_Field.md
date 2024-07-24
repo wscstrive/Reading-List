@@ -5,6 +5,9 @@
 
 ## 2023
 - ICCV 2023 - [WaveNeRF: Wavelet-based Generalizable Neural Radiance Fields](https://arxiv.org/abs/2308.04826) - [no code] - [[thought]]()
+- arXiv 2023 - [Explicit Correspondence Matching for Generalizable Neural Radiance Fields]() - [[code]](https://github.com/donydchen/matchnerf?tab=readme-ov-file) - [[note]]()
+![image](https://github.com/user-attachments/assets/58decac2-733c-4811-aee6-f691c0eb7c6f)
+
 
 ## 2021
 
