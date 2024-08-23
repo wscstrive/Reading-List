@@ -16,4 +16,4 @@
 
 
 ## 2020
-- ECCV 2020 - [NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](https://arxiv.org/pdf/2003.08934.pdf) - [[code(pytorch)]](https://github.com/yenchenlin/nerf-pytorch) - [[note]]()
+- ECCV 2020 - [NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](https://arxiv.org/pdf/2003.08934.pdf) - [[code(pytorch)]](https://github.com/yenchenlin/nerf-pytorch) - [[note]](https://www.notion.so/NeRF-2cfb3fce0e994f2ab40426b37f1e9453?pvs=4)
