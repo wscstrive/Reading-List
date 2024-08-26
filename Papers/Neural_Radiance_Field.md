@@ -12,7 +12,7 @@
 ## 2021
 
 - ICCV 2021 - [MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View Stereo](https://arxiv.org/abs/2103.15595) - [[code]](https://github.com/apchenstu/mvsnerf) - [[thought]]()
-- CVPR 2021 - [pixelNeRF: Neural Radiance Fields from One or Few Images](https://arxiv.org/abs/2012.02190) - [[code]](https://github.com/sxyu/pixel-nerf) - [[thought]]()
+- CVPR 2021 - [pixelNeRF: Neural Radiance Fields from One or Few Images](https://arxiv.org/abs/2012.02190) - [[code]](https://github.com/sxyu/pixel-nerf) - [[note]]()
 
 
 ## 2020
