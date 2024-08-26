@@ -8,6 +8,9 @@ ssr://aGsuMTIxMzgub25lOjUxNTphdXRoX2FlczEyOF9zaGExOmNoYWNoYTIwLWlldGY6aHR0cF9zaW
 
 https://sub.id9.cc/sub?target=clash&new_name=true&url=ssr%3A%2F%2FaGsuMTIxMzgub25lOjUxNTphdXRoX2FlczEyOF9zaGExOmNoYWNoYTIwLWlldGY6aHR0cF9zaW1wbGU6TVVNd1UwNWEvP29iZnNwYXJhbT1ZV3BoZUM1dGFXTnliM052Wm5RdVkyOXQmcHJvdG9wYXJhbT1Namc1TWpjNlltRktZbkZZJnJlbWFya3M9NmFhWjVyaXZNU0JiZURFdU1DMU9aWFJtYkdsNFhRJmdyb3VwPVRXRjVhVzVu&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
 
+sudo apt install -y python libcanberra-gtk-module libcanberra-gtk3-module gconf2 gconf-service libappindicator1 libssl-dev libsodium-dev
+
+
 https://newsub.djxyy.xyz/link/1A9j3rZQ5R2n4UMM?clash=1
 ## Papers
 
