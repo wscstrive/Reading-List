@@ -38,3 +38,4 @@ MVSNeRF
 |    LPIPS  | __0.175__|   0.162   |   0.227   |   0.173    |   0.173     |   0.139     |
 > Abs err: 0.026, Abs(0.01):0.746, Abs(0.05):0.903, Abs(0.1):0.936
 
+![ft_scan1_spiral2](https://github.com/user-attachments/assets/a25b304e-579f-4526-a7ec-8897f104ee3e)
