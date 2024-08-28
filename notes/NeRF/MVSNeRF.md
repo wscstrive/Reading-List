@@ -12,6 +12,7 @@ MVSNeRF
 <img width="1409" alt="image" src="https://github.com/user-attachments/assets/46a1a05e-ef2d-43f2-9caf-c14357f007c4">
 
 ## Result
+> nearest 3 views, No per-scene optimization
 - NeRF_LLFF
   
 |           |   Mean   |   Room   |   Fern   |   Leaves   |   Fortress   |   Orchids   |   Flower   |   T-Rex   |   Horns   |
